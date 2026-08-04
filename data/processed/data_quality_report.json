@@ -1,0 +1,190 @@
+{
+  "years": [
+    "2024-25",
+    "2025-26"
+  ],
+  "records_by_year": {
+    "2024-25": 26430,
+    "2025-26": 27004
+  },
+  "missing_by_year": {
+    "2024-25": {
+      "records": 26430,
+      "columns": {
+        "AdministrativeUnitOrCollege": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "Department": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "JobTitle": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "Position": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "EEO": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "Rank": {
+          "empty": 21836,
+          "share": 0.826182
+        },
+        "FullOrPartTime": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "salary": {
+          "empty": 0,
+          "share": 0.0
+        }
+      }
+    },
+    "2025-26": {
+      "records": 27004,
+      "columns": {
+        "AdministrativeUnitOrCollege": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "Department": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "JobTitle": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "Position": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "EEO": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "Rank": {
+          "empty": 22213,
+          "share": 0.822582
+        },
+        "FullOrPartTime": {
+          "empty": 0,
+          "share": 0.0
+        },
+        "salary": {
+          "empty": 0,
+          "share": 0.0
+        }
+      }
+    }
+  },
+  "missing_note": "'empty' counts source fields published as an empty string. Academic rank is reported separately via rank_status, which distinguishes 'Not applicable' (the field cannot apply to this role) from 'Not reported' (a faculty record with no rank published).",
+  "rank_status_by_year": {
+    "2024-25": {
+      "Not applicable": 21814,
+      "Reported": 4594,
+      "Not reported": 22
+    },
+    "2025-26": {
+      "Not applicable": 22202,
+      "Reported": 4791,
+      "Not reported": 11
+    }
+  },
+  "incomplete_records_by_year": {
+    "2024-25": 0,
+    "2025-26": 0
+  },
+  "salary_range_by_year": {
+    "2024-25": {
+      "min": 27.0,
+      "max": 1600000.0
+    },
+    "2025-26": {
+      "min": 27.0,
+      "max": 1700000.0
+    }
+  },
+  "cardinality_by_year": {
+    "2024-25": {
+      "unit": 34,
+      "department": 757,
+      "job_title": 3478,
+      "eeo_category": 8,
+      "faculty_rank": 12
+    },
+    "2025-26": {
+      "unit": 34,
+      "department": 765,
+      "job_title": 3535,
+      "eeo_category": 8,
+      "faculty_rank": 12
+    }
+  },
+  "eeo_values": [
+    "Executive/Admin/Managerial",
+    "Faculty",
+    "Not Reportable",
+    "Office & Clerical",
+    "Professional",
+    "Service & Maintenance",
+    "Skilled Crafts",
+    "Technical & Paraprofessional"
+  ],
+  "faculty_rank_values": [
+    "Assistant Professor",
+    "Associate Professor",
+    "Instructor",
+    "Lecturer",
+    "Librarian I",
+    "Librarian II",
+    "Librarian III",
+    "Librarian IV",
+    "Professor",
+    "Senior Lecturer"
+  ],
+  "appointments_by_year": {
+    "2024-25": {
+      "records": 26430,
+      "distinct_name_combinations": 25859,
+      "names_on_more_than_one_record": 503
+    },
+    "2025-26": {
+      "records": 27004,
+      "distinct_name_combinations": 26429,
+      "names_on_more_than_one_record": 502
+    }
+  },
+  "appointments_caveat": "Distinct-name counts approximate headcount. Two different employees sharing a name are indistinguishable in this source, so this is a lower bound on people and is never reported as an exact person count.",
+  "research_by_year": {
+    "2024-25": {
+      "records": 2672,
+      "by_category": {
+        "Research Administration": 981,
+        "Research Support Staff": 858,
+        "Research Faculty/Scientist": 371,
+        "Postdoctoral": 246,
+        "Clinical Research": 216
+      }
+    },
+    "2025-26": {
+      "records": 2619,
+      "by_category": {
+        "Research Support Staff": 911,
+        "Research Administration": 840,
+        "Research Faculty/Scientist": 378,
+        "Postdoctoral": 276,
+        "Clinical Research": 214
+      }
+    }
+  },
+  "residents_by_year": {
+    "2024-25": 939,
+    "2025-26": 952
+  }
+}

@@ -1,0 +1,3543 @@
+{
+  "years": {
+    "2024-25": {
+      "overview": {
+        "records": 26430,
+        "units": 34,
+        "departments": 757,
+        "job_titles": 3478,
+        "total_payroll": 2061046209.43,
+        "full_time_records": 19203,
+        "part_time_records": 7227,
+        "part_time_share": 0.2734392735527809
+      },
+      "distribution": {
+        "all": {
+          "count": 26430,
+          "total": 2061046209.43,
+          "mean": 77981.31704237609,
+          "median": 60779.0,
+          "std": 77940.73031995255,
+          "min": 27.0,
+          "max": 1600000.0,
+          "p10": 16602.5,
+          "p25": 42952.0,
+          "p75": 86109.0,
+          "p90": 136297.57500000007,
+          "p95": 206836.9,
+          "p99": 408564.9999999987
+        },
+        "full_time": {
+          "count": 19203,
+          "total": 1791453307.35,
+          "mean": 93290.28315107014,
+          "median": 68435.0,
+          "std": 84161.76814748286,
+          "min": 6000.0,
+          "max": 1600000.0,
+          "p10": 41725.0,
+          "p25": 51554.0,
+          "p75": 100883.0,
+          "p90": 155747.0,
+          "p95": 243201.49999999927,
+          "p99": 440000.0
+        },
+        "part_time": {
+          "count": 7227,
+          "total": 269592902.08000004,
+          "mean": 37303.570233845305,
+          "median": 34407.0,
+          "std": 33437.670231316326,
+          "min": 27.0,
+          "max": 657938.0,
+          "p10": 5855.0,
+          "p25": 9963.0,
+          "p75": 57845.0,
+          "p90": 72072.0,
+          "p95": 80402.79999999999,
+          "p99": 131875.03499999992
+        },
+        "mean_median_gap": 17202.31704237609
+      },
+      "concentration": {
+        "gini_all": 0.4018035631132624,
+        "gini_full_time": 0.350915152030157,
+        "top_1pct_payroll_share": 0.07261869108766497,
+        "top_5pct_payroll_share": 0.2178913952512487,
+        "top_10pct_payroll_share": 0.32103966076189655,
+        "bottom_50pct_payroll_share": 0.24518935334776304,
+        "lorenz": {
+          "population_share": [
+            0.0,
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05,
+            0.06,
+            0.07,
+            0.08,
+            0.09,
+            0.1,
+            0.11,
+            0.12,
+            0.13,
+            0.14,
+            0.15,
+            0.16,
+            0.17,
+            0.18,
+            0.19,
+            0.2,
+            0.21,
+            0.22,
+            0.23,
+            0.24,
+            0.25,
+            0.26,
+            0.27,
+            0.28,
+            0.29,
+            0.3,
+            0.31,
+            0.32,
+            0.33,
+            0.34,
+            0.35000000000000003,
+            0.36,
+            0.37,
+            0.38,
+            0.39,
+            0.4,
+            0.41000000000000003,
+            0.42,
+            0.43,
+            0.44,
+            0.45,
+            0.46,
+            0.47000000000000003,
+            0.48,
+            0.49,
+            0.5,
+            0.51,
+            0.52,
+            0.53,
+            0.54,
+            0.55,
+            0.56,
+            0.5700000000000001,
+            0.58,
+            0.59,
+            0.6,
+            0.61,
+            0.62,
+            0.63,
+            0.64,
+            0.65,
+            0.66,
+            0.67,
+            0.68,
+            0.6900000000000001,
+            0.7000000000000001,
+            0.71,
+            0.72,
+            0.73,
+            0.74,
+            0.75,
+            0.76,
+            0.77,
+            0.78,
+            0.79,
+            0.8,
+            0.81,
+            0.8200000000000001,
+            0.8300000000000001,
+            0.84,
+            0.85,
+            0.86,
+            0.87,
+            0.88,
+            0.89,
+            0.9,
+            0.91,
+            0.92,
+            0.93,
+            0.9400000000000001,
+            0.9500000000000001,
+            0.96,
+            0.97,
+            0.98,
+            0.99,
+            1.0
+          ],
+          "payroll_share": [
+            0.0,
+            0.00013987828059407295,
+            0.0007617451723385643,
+            0.0015276912208925114,
+            0.0023917289080885216,
+            0.003304858944372611,
+            0.0043004740793518015,
+            0.005455845457783225,
+            0.007038907295539083,
+            0.008842339641205878,
+            0.010833023489645495,
+            0.013184199934806408,
+            0.016322580722391407,
+            0.020111332764083667,
+            0.02426332885269472,
+            0.028631878455709234,
+            0.03312092569670184,
+            0.03772752246127693,
+            0.042437041420914624,
+            0.04725695843905241,
+            0.052196309970047636,
+            0.05723657474066282,
+            0.06237261892616779,
+            0.06762284274477524,
+            0.072951783866885,
+            0.07839581013309044,
+            0.08395647065955654,
+            0.08959587143903468,
+            0.09530612681620783,
+            0.10112152891401657,
+            0.1070414300031699,
+            0.11308003357404374,
+            0.1192219291764237,
+            0.1254494889183034,
+            0.13177655598760818,
+            0.13815542696577804,
+            0.14463200970270346,
+            0.15122260958243963,
+            0.1579257531785363,
+            0.16473141723197798,
+            0.17163336643860644,
+            0.17860290022891032,
+            0.18565027662131875,
+            0.19279250547220467,
+            0.20000716249055087,
+            0.20732297430059762,
+            0.21473196781570328,
+            0.22219123844227104,
+            0.22977828922184795,
+            0.23745534756610312,
+            0.2451893533477631,
+            0.2529875705475827,
+            0.2608798227569587,
+            0.26885721022395154,
+            0.27690003346302117,
+            0.28500136114000607,
+            0.2932300589840444,
+            0.3015828681890166,
+            0.3099901537562781,
+            0.31853693828221635,
+            0.3272337086010911,
+            0.33601648926713257,
+            0.34491769857338767,
+            0.3539521798309183,
+            0.3631305631507332,
+            0.3724029475652899,
+            0.38181871122512906,
+            0.3914029683172895,
+            0.40111985484723234,
+            0.41097343132556685,
+            0.4210013602897195,
+            0.4311865418998908,
+            0.4415122620136022,
+            0.4520564850885474,
+            0.46279285057067787,
+            0.47373654092890516,
+            0.48491086280709794,
+            0.4963074902541343,
+            0.507965471593934,
+            0.5199505544110882,
+            0.5322596237681579,
+            0.544894225059898,
+            0.5579037105956034,
+            0.5713559603574697,
+            0.5852570997976781,
+            0.5995676208500699,
+            0.6143627448169571,
+            0.6296329557059717,
+            0.6454487386082942,
+            0.6618782921015977,
+            0.6789603392381034,
+            0.6968781778246596,
+            0.7157341567407014,
+            0.7357060534219428,
+            0.7575425771806443,
+            0.7821587843611866,
+            0.8106857018465834,
+            0.8426948591125165,
+            0.8804807818364605,
+            0.9273217760404183,
+            1.0
+          ]
+        },
+        "count_over_250k": 945,
+        "count_over_500k": 128,
+        "count_over_1m": 12
+      },
+      "bands_by_time_status": [
+        {
+          "salary_band": "$100-150k",
+          "part_time": 90,
+          "full_time": 2763
+        },
+        {
+          "salary_band": "$150-250k",
+          "part_time": 39,
+          "full_time": 1178
+        },
+        {
+          "salary_band": "$25-40k",
+          "part_time": 1177,
+          "full_time": 1413
+        },
+        {
+          "salary_band": "$250-500k",
+          "part_time": 13,
+          "full_time": 804
+        },
+        {
+          "salary_band": "$40-60k",
+          "part_time": 1573,
+          "full_time": 5733
+        },
+        {
+          "salary_band": "$500k+",
+          "part_time": 3,
+          "full_time": 125
+        },
+        {
+          "salary_band": "$60-80k",
+          "part_time": 1044,
+          "full_time": 4756
+        },
+        {
+          "salary_band": "$80-100k",
+          "part_time": 232,
+          "full_time": 2411
+        },
+        {
+          "salary_band": "Under $25k",
+          "part_time": 3056,
+          "full_time": 20
+        }
+      ],
+      "by_unit": [
+        {
+          "unit": "Hospitals",
+          "headcount": 10547,
+          "payroll": 645656265.0,
+          "median": 57845.0,
+          "mean": 61217.05366454916,
+          "full_time": 5512,
+          "part_time": 5035,
+          "headcount_share": 0.3990541051835036,
+          "payroll_share": 0.31326627323827044,
+          "part_time_share": 0.47738693467336685
+        },
+        {
+          "unit": "College of Medicine",
+          "headcount": 2695,
+          "payroll": 464109731.97,
+          "median": 99478.0,
+          "mean": 172211.4033283859,
+          "full_time": 2405,
+          "part_time": 290,
+          "headcount_share": 0.10196746121831253,
+          "payroll_share": 0.22518162370476572,
+          "part_time_share": 0.10760667903525047
+        },
+        {
+          "unit": "Healthcare",
+          "headcount": 1540,
+          "payroll": 144924743.0,
+          "median": 83768.0,
+          "mean": 94106.97597402598,
+          "full_time": 1420,
+          "part_time": 120,
+          "headcount_share": 0.058267120696178586,
+          "payroll_share": 0.07031610564426898,
+          "part_time_share": 0.07792207792207792
+        },
+        {
+          "unit": "College of Ag, Food and Environment",
+          "headcount": 2107,
+          "payroll": 127284361.15,
+          "median": 50200.0,
+          "mean": 60410.23310393925,
+          "full_time": 1880,
+          "part_time": 227,
+          "headcount_share": 0.07972001513431706,
+          "payroll_share": 0.06175716030413582,
+          "part_time_share": 0.10773611770289511
+        },
+        {
+          "unit": "Ambulatory Clinics",
+          "headcount": 1329,
+          "payroll": 80946041.0,
+          "median": 53560.0,
+          "mean": 60907.48006019564,
+          "full_time": 1186,
+          "part_time": 143,
+          "headcount_share": 0.050283768444948924,
+          "payroll_share": 0.03927424850041879,
+          "part_time_share": 0.10759969902182091
+        },
+        {
+          "unit": "Research Administration",
+          "headcount": 985,
+          "payroll": 71083314.0,
+          "median": 66816.0,
+          "mean": 72165.80101522843,
+          "full_time": 911,
+          "part_time": 74,
+          "headcount_share": 0.03726825576995838,
+          "payroll_share": 0.03448894725153139,
+          "part_time_share": 0.0751269035532995
+        },
+        {
+          "unit": "College of Arts and Sciences",
+          "headcount": 687,
+          "payroll": 60738530.79,
+          "median": 83193.0,
+          "mean": 88411.25296943232,
+          "full_time": 629,
+          "part_time": 58,
+          "headcount_share": 0.025993189557321227,
+          "payroll_share": 0.029469756918646554,
+          "part_time_share": 0.08442503639010189
+        },
+        {
+          "unit": "College of Engineering",
+          "headcount": 448,
+          "payroll": 43198148.75,
+          "median": 85992.0,
+          "mean": 96424.43917410714,
+          "full_time": 393,
+          "part_time": 55,
+          "headcount_share": 0.016950435111615588,
+          "payroll_share": 0.02095933053434392,
+          "part_time_share": 0.12276785714285714
+        },
+        {
+          "unit": "UK Athletics",
+          "headcount": 945,
+          "payroll": 42134530.0,
+          "median": 5850.0,
+          "mean": 44586.804232804236,
+          "full_time": 295,
+          "part_time": 650,
+          "headcount_share": 0.03575482406356413,
+          "payroll_share": 0.020443272842316652,
+          "part_time_share": 0.6878306878306878
+        },
+        {
+          "unit": "Physical Plant",
+          "headcount": 714,
+          "payroll": 39812758.0,
+          "median": 48131.0,
+          "mean": 55760.16526610644,
+          "full_time": 710,
+          "part_time": 4,
+          "headcount_share": 0.027014755959137344,
+          "payroll_share": 0.01931677117079804,
+          "part_time_share": 0.0056022408963585435
+        },
+        {
+          "unit": "College of Business & Economics",
+          "headcount": 218,
+          "payroll": 28746908.0,
+          "median": 106109.0,
+          "mean": 131866.5504587156,
+          "full_time": 192,
+          "part_time": 26,
+          "headcount_share": 0.008248202799848657,
+          "payroll_share": 0.013947726095840522,
+          "part_time_share": 0.11926605504587157
+        },
+        {
+          "unit": "President",
+          "headcount": 402,
+          "payroll": 27107955.89,
+          "median": 57264.5,
+          "mean": 67432.72609452736,
+          "full_time": 385,
+          "part_time": 17,
+          "headcount_share": 0.015209988649262202,
+          "payroll_share": 0.013152522134618679,
+          "part_time_share": 0.04228855721393035
+        },
+        {
+          "unit": "Finance Administration",
+          "headcount": 338,
+          "payroll": 26823963.0,
+          "median": 60589.5,
+          "mean": 79360.83727810651,
+          "full_time": 334,
+          "part_time": 4,
+          "headcount_share": 0.012788497919031404,
+          "payroll_share": 0.013014731487955525,
+          "part_time_share": 0.011834319526627219
+        },
+        {
+          "unit": "College of Dentistry",
+          "headcount": 315,
+          "payroll": 24467325.67,
+          "median": 60424.0,
+          "mean": 77674.04974603176,
+          "full_time": 296,
+          "part_time": 19,
+          "headcount_share": 0.01191827468785471,
+          "payroll_share": 0.011871313490233026,
+          "part_time_share": 0.06031746031746032
+        },
+        {
+          "unit": "College of Public Health",
+          "headcount": 236,
+          "payroll": 20912597.92,
+          "median": 75645.0,
+          "mean": 88612.70305084747,
+          "full_time": 213,
+          "part_time": 23,
+          "headcount_share": 0.008929247067726069,
+          "payroll_share": 0.010146593426347078,
+          "part_time_share": 0.09745762711864407
+        },
+        {
+          "unit": "Information and Technology Services (ITS)",
+          "headcount": 230,
+          "payroll": 19669461.0,
+          "median": 74905.0,
+          "mean": 85519.39565217392,
+          "full_time": 230,
+          "part_time": 0,
+          "headcount_share": 0.00870223231176693,
+          "payroll_share": 0.009543435227218781,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "College of Education",
+          "headcount": 248,
+          "payroll": 18565890.0,
+          "median": 74491.625,
+          "mean": 74862.45967741935,
+          "full_time": 206,
+          "part_time": 42,
+          "headcount_share": 0.009383276579644344,
+          "payroll_share": 0.009007993083830252,
+          "part_time_share": 0.1693548387096774
+        },
+        {
+          "unit": "President's Office",
+          "headcount": 167,
+          "payroll": 17307504.0,
+          "median": 70000.0,
+          "mean": 103637.74850299401,
+          "full_time": 162,
+          "part_time": 5,
+          "headcount_share": 0.006318577374195989,
+          "payroll_share": 0.00839743617625465,
+          "part_time_share": 0.029940119760479042
+        },
+        {
+          "unit": "College of Health Sciences",
+          "headcount": 189,
+          "payroll": 15854983.14,
+          "median": 79061.0,
+          "mean": 83888.79968253968,
+          "full_time": 163,
+          "part_time": 26,
+          "headcount_share": 0.007150964812712826,
+          "payroll_share": 0.007692686882738467,
+          "part_time_share": 0.13756613756613756
+        },
+        {
+          "unit": "College of Pharmacy",
+          "headcount": 149,
+          "payroll": 15611928.33,
+          "median": 74134.0,
+          "mean": 104778.04248322148,
+          "full_time": 146,
+          "part_time": 3,
+          "headcount_share": 0.005637533106318577,
+          "payroll_share": 0.0075747590027676346,
+          "part_time_share": 0.020134228187919462
+        },
+        {
+          "unit": "College of Nursing",
+          "headcount": 216,
+          "payroll": 15320098.57,
+          "median": 61625.0,
+          "mean": 70926.38226851852,
+          "full_time": 135,
+          "part_time": 81,
+          "headcount_share": 0.008172531214528945,
+          "payroll_share": 0.007433165981386174,
+          "part_time_share": 0.375
+        },
+        {
+          "unit": "College of Fine Arts",
+          "headcount": 216,
+          "payroll": 12520105.25,
+          "median": 58015.25,
+          "mean": 57963.45023148148,
+          "full_time": 153,
+          "part_time": 63,
+          "headcount_share": 0.008172531214528945,
+          "payroll_share": 0.006074635877990597,
+          "part_time_share": 0.2916666666666667
+        },
+        {
+          "unit": "Human Resources",
+          "headcount": 171,
+          "payroll": 12264892.0,
+          "median": 58885.0,
+          "mean": 71724.51461988305,
+          "full_time": 162,
+          "part_time": 9,
+          "headcount_share": 0.006469920544835414,
+          "payroll_share": 0.005950808838678081,
+          "part_time_share": 0.05263157894736842
+        },
+        {
+          "unit": "Police",
+          "headcount": 193,
+          "payroll": 11802714.0,
+          "median": 49275.0,
+          "mean": 61153.9585492228,
+          "full_time": 193,
+          "part_time": 0,
+          "headcount_share": 0.007302307983352251,
+          "payroll_share": 0.005726564472935394,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "College of Communication and Information",
+          "headcount": 177,
+          "payroll": 11778333.0,
+          "median": 65649.75,
+          "mean": 66544.25423728813,
+          "full_time": 142,
+          "part_time": 35,
+          "headcount_share": 0.006696935300794552,
+          "payroll_share": 0.005714735043838439,
+          "part_time_share": 0.1977401129943503
+        },
+        {
+          "unit": "College of Social Work",
+          "headcount": 304,
+          "payroll": 11718071.25,
+          "median": 17280.0,
+          "mean": 38546.28700657895,
+          "full_time": 138,
+          "part_time": 166,
+          "headcount_share": 0.011502080968596291,
+          "payroll_share": 0.005685496616420227,
+          "part_time_share": 0.5460526315789473
+        },
+        {
+          "unit": "Administration",
+          "headcount": 155,
+          "payroll": 9549937.0,
+          "median": 52520.0,
+          "mean": 61612.49677419355,
+          "full_time": 155,
+          "part_time": 0,
+          "headcount_share": 0.005864547862277715,
+          "payroll_share": 0.0046335385185959106,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "UK Libraries",
+          "headcount": 129,
+          "payroll": 8656495.0,
+          "median": 64000.0,
+          "mean": 67104.61240310078,
+          "full_time": 127,
+          "part_time": 2,
+          "headcount_share": 0.004880817253121453,
+          "payroll_share": 0.004200048965614423,
+          "part_time_share": 0.015503875968992248
+        },
+        {
+          "unit": "College of Law",
+          "headcount": 82,
+          "payroll": 7381441.25,
+          "median": 73250.0,
+          "mean": 90017.5762195122,
+          "full_time": 63,
+          "part_time": 19,
+          "headcount_share": 0.0031025349981082103,
+          "payroll_share": 0.0035814050244130143,
+          "part_time_share": 0.23170731707317074
+        },
+        {
+          "unit": "Provost Administration/Support, Other",
+          "headcount": 61,
+          "payroll": 7238236.0,
+          "median": 72320.0,
+          "mean": 118659.60655737705,
+          "full_time": 57,
+          "part_time": 4,
+          "headcount_share": 0.0023079833522512295,
+          "payroll_share": 0.0035119232004030593,
+          "part_time_share": 0.06557377049180328
+        },
+        {
+          "unit": "Academic Excellence",
+          "headcount": 77,
+          "payroll": 5482224.0,
+          "median": 63500.0,
+          "mean": 71197.71428571429,
+          "full_time": 77,
+          "part_time": 0,
+          "headcount_share": 0.0029133560348089294,
+          "payroll_share": 0.0026599228949438043,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "College of Design",
+          "headcount": 72,
+          "payroll": 5357047.25,
+          "median": 75159.75,
+          "mean": 74403.43402777778,
+          "full_time": 59,
+          "part_time": 13,
+          "headcount_share": 0.002724177071509648,
+          "payroll_share": 0.0025991883275055423,
+          "part_time_share": 0.18055555555555555
+        },
+        {
+          "unit": "Graduate School",
+          "headcount": 61,
+          "payroll": 5141155.75,
+          "median": 70909.0,
+          "mean": 84281.2418032787,
+          "full_time": 53,
+          "part_time": 8,
+          "headcount_share": 0.0023079833522512295,
+          "payroll_share": 0.002494439826956539,
+          "part_time_share": 0.13114754098360656
+        },
+        {
+          "unit": "Lewis Honors College",
+          "headcount": 27,
+          "payroll": 1878518.5,
+          "median": 65023.5,
+          "mean": 69574.75925925926,
+          "full_time": 21,
+          "part_time": 6,
+          "headcount_share": 0.0010215664018161181,
+          "payroll_share": 0.0009114392930178505,
+          "part_time_share": 0.2222222222222222
+        }
+      ],
+      "by_eeo": [
+        {
+          "eeo_category": "Executive/Admin/Managerial",
+          "headcount": 734,
+          "payroll": 129276735.5,
+          "median": 142616.0,
+          "full_time": 727,
+          "part_time": 7,
+          "median_ft": 142795.0
+        },
+        {
+          "eeo_category": "Faculty",
+          "headcount": 3696,
+          "payroll": 618436185.64,
+          "median": 124924.25,
+          "full_time": 3156,
+          "part_time": 540,
+          "median_ft": 138020.5
+        },
+        {
+          "eeo_category": "Professional",
+          "headcount": 11859,
+          "payroll": 894816887.4,
+          "median": 69930.0,
+          "full_time": 8461,
+          "part_time": 3398,
+          "median_ft": 76306.0
+        },
+        {
+          "eeo_category": "Not Reportable",
+          "headcount": 1222,
+          "payroll": 75963462.0,
+          "median": 63059.0,
+          "full_time": 1175,
+          "part_time": 47,
+          "median_ft": 63059.0
+        },
+        {
+          "eeo_category": "Skilled Crafts",
+          "headcount": 103,
+          "payroll": 5473517.0,
+          "median": 51355.0,
+          "full_time": 103,
+          "part_time": 0,
+          "median_ft": 51355.0
+        },
+        {
+          "eeo_category": "Office & Clerical",
+          "headcount": 3213,
+          "payroll": 143944293.89,
+          "median": 44387.0,
+          "full_time": 2772,
+          "part_time": 441,
+          "median_ft": 46571.0
+        },
+        {
+          "eeo_category": "Technical & Paraprofessional",
+          "headcount": 3445,
+          "payroll": 129024562.0,
+          "median": 41288.0,
+          "full_time": 1975,
+          "part_time": 1470,
+          "median_ft": 47174.0
+        },
+        {
+          "eeo_category": "Service & Maintenance",
+          "headcount": 2158,
+          "payroll": 64110566.0,
+          "median": 34902.0,
+          "full_time": 834,
+          "part_time": 1324,
+          "median_ft": 39603.0
+        }
+      ],
+      "research": {
+        "records": 2672,
+        "share_of_headcount": 0.10109723798713582,
+        "payroll": 182282123.17000002,
+        "share_of_payroll": 0.08844155086673758,
+        "median": 62001.0,
+        "by_category": [
+          {
+            "research_category": "Research Administration",
+            "headcount": 981,
+            "payroll": 67763047.0,
+            "median": 62650.0,
+            "mean": 69075.48114169214,
+            "p25": 52682.0,
+            "p75": 79040.0
+          },
+          {
+            "research_category": "Research Support Staff",
+            "headcount": 858,
+            "payroll": 59290417.17,
+            "median": 61466.0,
+            "mean": 69103.05031468532,
+            "p25": 44834.5,
+            "p75": 82192.75
+          },
+          {
+            "research_category": "Research Faculty/Scientist",
+            "headcount": 371,
+            "payroll": 25885495.0,
+            "median": 67504.0,
+            "mean": 69772.22371967655,
+            "p25": 57845.0,
+            "p75": 78000.0
+          },
+          {
+            "research_category": "Postdoctoral",
+            "headcount": 246,
+            "payroll": 14046085.0,
+            "median": 56484.0,
+            "mean": 57097.90650406504,
+            "p25": 52029.5,
+            "p75": 61408.5
+          },
+          {
+            "research_category": "Clinical Research",
+            "headcount": 216,
+            "payroll": 15297079.0,
+            "median": 65647.0,
+            "mean": 70819.81018518518,
+            "p25": 58255.75,
+            "p75": 83490.75
+          }
+        ],
+        "by_unit": [
+          {
+            "unit": "Research Administration",
+            "headcount": 985,
+            "median": 66816.0
+          },
+          {
+            "unit": "College of Medicine",
+            "headcount": 705,
+            "median": 62525.0
+          },
+          {
+            "unit": "College of Ag, Food and Environment",
+            "headcount": 326,
+            "median": 49954.5
+          },
+          {
+            "unit": "Hospitals",
+            "headcount": 223,
+            "median": 56722.0
+          },
+          {
+            "unit": "College of Engineering",
+            "headcount": 91,
+            "median": 74017.0
+          },
+          {
+            "unit": "College of Public Health",
+            "headcount": 83,
+            "median": 66492.0
+          },
+          {
+            "unit": "College of Arts and Sciences",
+            "headcount": 54,
+            "median": 55819.0
+          },
+          {
+            "unit": "Finance Administration",
+            "headcount": 41,
+            "median": 69424.0
+          },
+          {
+            "unit": "College of Pharmacy",
+            "headcount": 40,
+            "median": 57247.5
+          },
+          {
+            "unit": "President",
+            "headcount": 29,
+            "median": 83710.0
+          },
+          {
+            "unit": "College of Health Sciences",
+            "headcount": 19,
+            "median": 85000.0
+          },
+          {
+            "unit": "College of Education",
+            "headcount": 17,
+            "median": 61434.0
+          },
+          {
+            "unit": "College of Dentistry",
+            "headcount": 15,
+            "median": 80122.0
+          },
+          {
+            "unit": "College of Nursing",
+            "headcount": 13,
+            "median": 70445.0
+          },
+          {
+            "unit": "Information and Technology Services (ITS)",
+            "headcount": 9,
+            "median": 106256.0
+          }
+        ],
+        "postdoc": {
+          "count": 246,
+          "count_full_time": 220,
+          "median": 56484.0,
+          "mean": 57097.90650406504,
+          "min": 23600.0,
+          "max": 89400.0,
+          "nih_entry_stipend": 61008,
+          "nih_source": "NIH NOT-OD-24-104 (FY2024 NRSA stipend levels)",
+          "share_ft_below_nih_entry": 0.7136363636363636,
+          "count_ft_below_nih_entry": 157
+        }
+      },
+      "faculty": {
+        "records": 2814,
+        "by_rank": [
+          {
+            "faculty_rank": "Instructor",
+            "headcount": 52,
+            "median": 68435.0,
+            "mean": 77399.90865384616
+          },
+          {
+            "faculty_rank": "Assistant Professor",
+            "headcount": 1087,
+            "median": 140477.0,
+            "mean": 192442.22911683534
+          },
+          {
+            "faculty_rank": "Associate Professor",
+            "headcount": 814,
+            "median": 135999.75,
+            "mean": 190516.98934889436
+          },
+          {
+            "faculty_rank": "Professor",
+            "headcount": 861,
+            "median": 179000.0,
+            "mean": 233777.3424390244
+          }
+        ],
+        "ladder_by_college": [
+          {
+            "unit": "College of Ag, Food and Environment",
+            "Assistant Professor": 92958.0,
+            "Associate Professor": 110866.5,
+            "Professor": 148749.75
+          },
+          {
+            "unit": "College of Arts and Sciences",
+            "Assistant Professor": 86152.875,
+            "Associate Professor": 99835.5,
+            "Professor": 128227.5
+          },
+          {
+            "unit": "College of Business & Economics",
+            "Assistant Professor": 185000.25,
+            "Associate Professor": 200000.25,
+            "Professor": 276011.25
+          },
+          {
+            "unit": "College of Education",
+            "Assistant Professor": 84499.875,
+            "Associate Professor": 96075.75,
+            "Professor": 126587.25
+          },
+          {
+            "unit": "College of Engineering",
+            "Assistant Professor": 102758.25,
+            "Associate Professor": 116136.0,
+            "Professor": 156003.0
+          },
+          {
+            "unit": "College of Fine Arts",
+            "Assistant Professor": 65466.0,
+            "Associate Professor": 74812.125,
+            "Professor": 94706.25
+          },
+          {
+            "unit": "College of Health Sciences",
+            "Assistant Professor": 96969.0,
+            "Associate Professor": 114605.0,
+            "Professor": 145059.0
+          },
+          {
+            "unit": "College of Medicine",
+            "Assistant Professor": 235000.0,
+            "Associate Professor": 266500.0,
+            "Professor": 307559.5
+          }
+        ],
+        "professor_to_assistant_ratio": 1.2742299451155705
+      },
+      "dispersion": {
+        "min_dept_size": 30,
+        "departments_considered": 172,
+        "most_dispersed": [
+          {
+            "department": "Neurosurgery",
+            "headcount": 37,
+            "median": 82400.0,
+            "p10": 53512.0,
+            "p90": 952997.0,
+            "ratio_p90_p10": 17.809033487815817
+          },
+          {
+            "department": "Orthopaedic Surgery",
+            "headcount": 48,
+            "median": 488016.5,
+            "p10": 63450.600000000006,
+            "p90": 836956.2000000003,
+            "ratio_p90_p10": 13.190674319864591
+          },
+          {
+            "department": "Mens Sports",
+            "headcount": 66,
+            "median": 116000.0,
+            "p10": 41157.0,
+            "p90": 500000.0,
+            "ratio_p90_p10": 12.148601695944796
+          },
+          {
+            "department": "Ophthalmology & Visual Science",
+            "headcount": 37,
+            "median": 179506.0,
+            "p10": 67885.0,
+            "p90": 539100.2,
+            "ratio_p90_p10": 7.94137438314797
+          },
+          {
+            "department": "Internal Medicine & Divisions - Cardiolo",
+            "headcount": 55,
+            "median": 350000.0,
+            "p10": 56947.600000000006,
+            "p90": 450000.0,
+            "ratio_p90_p10": 7.902001137888163
+          },
+          {
+            "department": "EVPHA Administration",
+            "headcount": 68,
+            "median": 107795.5,
+            "p10": 57496.3,
+            "p90": 442410.6000000002,
+            "ratio_p90_p10": 7.694592521605741
+          },
+          {
+            "department": "UK Healthcare CNO",
+            "headcount": 35,
+            "median": 78062.0,
+            "p10": 42806.0,
+            "p90": 289159.0,
+            "ratio_p90_p10": 6.755104424613372
+          },
+          {
+            "department": "Womens Sports",
+            "headcount": 55,
+            "median": 95000.0,
+            "p10": 42040.0,
+            "p90": 246000.0,
+            "ratio_p90_p10": 5.851569933396765
+          },
+          {
+            "department": "Pharmaceutical Sciences",
+            "headcount": 60,
+            "median": 68220.0,
+            "p10": 36296.0,
+            "p90": 205951.7,
+            "ratio_p90_p10": 5.674225810006613
+          },
+          {
+            "department": "Behavioral Science",
+            "headcount": 57,
+            "median": 119600.0,
+            "p10": 47174.4,
+            "p90": 240363.6,
+            "ratio_p90_p10": 5.095212657712658
+          },
+          {
+            "department": "Athletics - Administrative Support",
+            "headcount": 44,
+            "median": 67377.5,
+            "p10": 42515.0,
+            "p90": 212322.7,
+            "ratio_p90_p10": 4.994065623897448
+          },
+          {
+            "department": "Neurology",
+            "headcount": 77,
+            "median": 225000.0,
+            "p10": 61428.0,
+            "p90": 304000.00000000006,
+            "ratio_p90_p10": 4.94888324542554
+          }
+        ]
+      },
+      "residents": {
+        "count": 939,
+        "median": 65270.0,
+        "p10": 60779.0,
+        "p90": 71805.0,
+        "iqr": 7656.0,
+        "full_time_iqr": 49329.0
+      },
+      "floor": {
+        "thresholds": {
+          "35000": {
+            "count": 439,
+            "share": 0.02286101130031766
+          },
+          "40000": {
+            "count": 1433,
+            "share": 0.07462375670468156
+          },
+          "45000": {
+            "count": 2848,
+            "share": 0.14831015987085353
+          },
+          "50000": {
+            "count": 4417,
+            "share": 0.230016143310941
+          }
+        },
+        "full_time_p10": 41725.0
+      },
+      "top_roles": [
+        {
+          "job_title": "Assistant Coach/Football",
+          "unit": "UK Athletics",
+          "department": "Mens Sports",
+          "salary": 1600000.0
+        },
+        {
+          "job_title": "Provost/Co-EVPHA",
+          "unit": "Provost Administration/Support, Other",
+          "department": "Provost",
+          "salary": 1373445.0
+        },
+        {
+          "job_title": "Athletics Director",
+          "unit": "UK Athletics",
+          "department": "Athletics - Administrative Support",
+          "salary": 1350000.0
+        },
+        {
+          "job_title": "Assistant Coach/Football",
+          "unit": "UK Athletics",
+          "department": "Mens Sports",
+          "salary": 1300000.0
+        },
+        {
+          "job_title": "EVPFA/Co-EVPHA",
+          "unit": "Finance Administration",
+          "department": "EVPFA",
+          "salary": 1255233.0
+        },
+        {
+          "job_title": "Assistant Coach/Football",
+          "unit": "UK Athletics",
+          "department": "Mens Sports",
+          "salary": 1250000.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Surgery/Cardiothoracic",
+          "salary": 1250000.0
+        },
+        {
+          "job_title": "President",
+          "unit": "President's Office",
+          "department": "Office Of The President",
+          "salary": 1101468.0
+        },
+        {
+          "job_title": "Univ Adv Hlthcare Innov & Growth/UKHC",
+          "unit": "Hospitals",
+          "department": "EVPHA Administration",
+          "salary": 1100000.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Surgery/Cardiothoracic",
+          "salary": 1100000.0
+        },
+        {
+          "job_title": "Special Faculty",
+          "unit": "College of Medicine",
+          "department": "Neurosurgery",
+          "salary": 1074015.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Neurosurgery",
+          "salary": 1060699.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Orthopaedic Surgery",
+          "salary": 997108.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Neurosurgery",
+          "salary": 964550.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Neurosurgery",
+          "salary": 962000.0
+        }
+      ]
+    },
+    "2025-26": {
+      "overview": {
+        "records": 27004,
+        "units": 34,
+        "departments": 765,
+        "job_titles": 3535,
+        "total_payroll": 2148135393.55,
+        "full_time_records": 19611,
+        "part_time_records": 7393,
+        "part_time_share": 0.2737742556658273
+      },
+      "distribution": {
+        "all": {
+          "count": 27004,
+          "total": 2148135393.55,
+          "mean": 79548.7851262776,
+          "median": 61465.0,
+          "std": 81348.63886519594,
+          "min": 27.0,
+          "max": 1700000.0,
+          "p10": 15924.0,
+          "p25": 43410.0,
+          "p75": 87922.0,
+          "p90": 137768.80000000005,
+          "p95": 208449.69999999995,
+          "p99": 440000.0
+        },
+        "full_time": {
+          "count": 19611,
+          "total": 1873770059.5900002,
+          "mean": 95546.88998980165,
+          "median": 69804.0,
+          "std": 87867.31820414138,
+          "min": 6000.0,
+          "max": 1700000.0,
+          "p10": 42411.0,
+          "p25": 52780.0,
+          "p75": 102854.0,
+          "p90": 157420.0,
+          "p95": 250000.0,
+          "p99": 474715.3000000041
+        },
+        "part_time": {
+          "count": 7393,
+          "total": 274365333.96000004,
+          "mean": 37111.50195590424,
+          "median": 34070.0,
+          "std": 34814.322553531994,
+          "min": 27.0,
+          "max": 657938.0,
+          "p10": 5998.4,
+          "p25": 11690.0,
+          "p75": 57002.0,
+          "p90": 71005.0,
+          "p95": 80908.0,
+          "p99": 132131.35999999984
+        },
+        "mean_median_gap": 18083.785126277595
+      },
+      "concentration": {
+        "gini_all": 0.40651259528620964,
+        "gini_full_time": 0.35345836444170575,
+        "top_1pct_payroll_share": 0.07540128909301448,
+        "top_5pct_payroll_share": 0.22234305712019486,
+        "top_10pct_payroll_share": 0.32484673639532285,
+        "bottom_50pct_payroll_share": 0.2425123604797932,
+        "lorenz": {
+          "population_share": [
+            0.0,
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05,
+            0.06,
+            0.07,
+            0.08,
+            0.09,
+            0.1,
+            0.11,
+            0.12,
+            0.13,
+            0.14,
+            0.15,
+            0.16,
+            0.17,
+            0.18,
+            0.19,
+            0.2,
+            0.21,
+            0.22,
+            0.23,
+            0.24,
+            0.25,
+            0.26,
+            0.27,
+            0.28,
+            0.29,
+            0.3,
+            0.31,
+            0.32,
+            0.33,
+            0.34,
+            0.35000000000000003,
+            0.36,
+            0.37,
+            0.38,
+            0.39,
+            0.4,
+            0.41000000000000003,
+            0.42,
+            0.43,
+            0.44,
+            0.45,
+            0.46,
+            0.47000000000000003,
+            0.48,
+            0.49,
+            0.5,
+            0.51,
+            0.52,
+            0.53,
+            0.54,
+            0.55,
+            0.56,
+            0.5700000000000001,
+            0.58,
+            0.59,
+            0.6,
+            0.61,
+            0.62,
+            0.63,
+            0.64,
+            0.65,
+            0.66,
+            0.67,
+            0.68,
+            0.6900000000000001,
+            0.7000000000000001,
+            0.71,
+            0.72,
+            0.73,
+            0.74,
+            0.75,
+            0.76,
+            0.77,
+            0.78,
+            0.79,
+            0.8,
+            0.81,
+            0.8200000000000001,
+            0.8300000000000001,
+            0.84,
+            0.85,
+            0.86,
+            0.87,
+            0.88,
+            0.89,
+            0.9,
+            0.91,
+            0.92,
+            0.93,
+            0.9400000000000001,
+            0.9500000000000001,
+            0.96,
+            0.97,
+            0.98,
+            0.99,
+            1.0
+          ],
+          "payroll_share": [
+            0.0,
+            0.0001683972998565,
+            0.0008399824356592636,
+            0.0015867751214540288,
+            0.002426618571460481,
+            0.0033141500397862573,
+            0.004311721592507904,
+            0.005599627023565458,
+            0.007222321407944756,
+            0.008991543241638983,
+            0.010887663631550148,
+            0.013000638150581249,
+            0.0157049006553761,
+            0.019241181125782676,
+            0.023267317144009734,
+            0.027541995326572925,
+            0.031941888195699944,
+            0.03647292935317318,
+            0.041119082323776264,
+            0.04587898320837664,
+            0.05075276088153256,
+            0.05573361227112675,
+            0.060821072285432244,
+            0.06601220386563096,
+            0.07130328221857252,
+            0.07669183349180984,
+            0.0821959936837148,
+            0.08779095755614459,
+            0.09346123422332923,
+            0.09923236052534153,
+            0.10511090145805768,
+            0.11110694112048979,
+            0.11721949210280959,
+            0.12342741482501841,
+            0.12973542276561967,
+            0.13609957873132314,
+            0.1425766249835179,
+            0.14916386103134227,
+            0.15584978684548056,
+            0.16263801946982265,
+            0.16951355320216893,
+            0.1764635864146134,
+            0.18349318537068518,
+            0.19057611120752255,
+            0.19773083063821947,
+            0.2049542184547374,
+            0.21228435383041222,
+            0.21968607739389948,
+            0.22720213995144523,
+            0.23482998369872465,
+            0.24251236047979316,
+            0.2503130841307859,
+            0.2582099388406588,
+            0.26617148079064573,
+            0.2742530644059645,
+            0.28240721704112626,
+            0.29063554722137136,
+            0.2989272453254487,
+            0.30729621761834036,
+            0.3157728571470564,
+            0.3243989777983145,
+            0.333153338005993,
+            0.3419790368501747,
+            0.35094962716671635,
+            0.36008233634738807,
+            0.36931576730316285,
+            0.3786884573163035,
+            0.3882372318170122,
+            0.3979277418996186,
+            0.4077502285610064,
+            0.41774763190647685,
+            0.4278935536046347,
+            0.43820057009273883,
+            0.4487198006765508,
+            0.4594452626931346,
+            0.47038112795588133,
+            0.48155223306036105,
+            0.4929394911091078,
+            0.5045792049768073,
+            0.5165337538740076,
+            0.5288007010641715,
+            0.5413983924160554,
+            0.5543911680501254,
+            0.5678448343910721,
+            0.5817253465876167,
+            0.5960146648038549,
+            0.6108131157559923,
+            0.626052985890946,
+            0.6418161147754997,
+            0.6581711978468416,
+            0.6751276069350998,
+            0.692912512288232,
+            0.711650420308769,
+            0.7314739739627248,
+            0.7531627099613459,
+            0.7776375350714685,
+            0.8060516527165995,
+            0.8382667438732311,
+            0.8765646945457175,
+            0.9245905177548907,
+            1.0
+          ]
+        },
+        "count_over_250k": 1006,
+        "count_over_500k": 169,
+        "count_over_1m": 17
+      },
+      "bands_by_time_status": [
+        {
+          "salary_band": "$100-150k",
+          "part_time": 88,
+          "full_time": 2934
+        },
+        {
+          "salary_band": "$150-250k",
+          "part_time": 38,
+          "full_time": 1216
+        },
+        {
+          "salary_band": "$25-40k",
+          "part_time": 1036,
+          "full_time": 1351
+        },
+        {
+          "salary_band": "$250-500k",
+          "part_time": 15,
+          "full_time": 822
+        },
+        {
+          "salary_band": "$40-60k",
+          "part_time": 1618,
+          "full_time": 5607
+        },
+        {
+          "salary_band": "$500k+",
+          "part_time": 5,
+          "full_time": 164
+        },
+        {
+          "salary_band": "$60-80k",
+          "part_time": 1055,
+          "full_time": 4935
+        },
+        {
+          "salary_band": "$80-100k",
+          "part_time": 300,
+          "full_time": 2569
+        },
+        {
+          "salary_band": "Under $25k",
+          "part_time": 3238,
+          "full_time": 13
+        }
+      ],
+      "by_unit": [
+        {
+          "unit": "Hospitals",
+          "headcount": 10909,
+          "payroll": 671822797.0,
+          "median": 57002.0,
+          "mean": 61584.26959391328,
+          "full_time": 5734,
+          "part_time": 5175,
+          "headcount_share": 0.4039771885646571,
+          "payroll_share": 0.31274695208561704,
+          "part_time_share": 0.474378953157943
+        },
+        {
+          "unit": "College of Medicine",
+          "headcount": 2728,
+          "payroll": 495009447.54,
+          "median": 104899.5,
+          "mean": 181455.0760777126,
+          "full_time": 2442,
+          "part_time": 286,
+          "headcount_share": 0.10102207080432528,
+          "payroll_share": 0.23043680069064423,
+          "part_time_share": 0.10483870967741936
+        },
+        {
+          "unit": "Healthcare",
+          "headcount": 1786,
+          "payroll": 165037586.0,
+          "median": 80000.0,
+          "mean": 92406.26315789473,
+          "full_time": 1648,
+          "part_time": 138,
+          "headcount_share": 0.06613834987409273,
+          "payroll_share": 0.07682829792551368,
+          "part_time_share": 0.07726763717805152
+        },
+        {
+          "unit": "College of Ag, Food and Environment",
+          "headcount": 2086,
+          "payroll": 126881076.45,
+          "median": 51752.5,
+          "mean": 60825.06061840844,
+          "full_time": 1863,
+          "part_time": 223,
+          "headcount_share": 0.077247815138498,
+          "payroll_share": 0.05906567939384716,
+          "part_time_share": 0.10690316395014382
+        },
+        {
+          "unit": "Ambulatory Clinics",
+          "headcount": 1360,
+          "payroll": 83681961.0,
+          "median": 54538.0,
+          "mean": 61530.853676470586,
+          "full_time": 1209,
+          "part_time": 151,
+          "headcount_share": 0.050362909198637236,
+          "payroll_share": 0.038955626936395066,
+          "part_time_share": 0.11102941176470588
+        },
+        {
+          "unit": "Research Administration",
+          "headcount": 851,
+          "payroll": 61573902.0,
+          "median": 64527.0,
+          "mean": 72354.76145710929,
+          "full_time": 789,
+          "part_time": 62,
+          "headcount_share": 0.03151384980002962,
+          "payroll_share": 0.028663883191386373,
+          "part_time_share": 0.07285546415981199
+        },
+        {
+          "unit": "College of Arts and Sciences",
+          "headcount": 682,
+          "payroll": 61178981.54,
+          "median": 85243.625,
+          "mean": 89705.25152492669,
+          "full_time": 625,
+          "part_time": 57,
+          "headcount_share": 0.02525551770108132,
+          "payroll_share": 0.02848003981671558,
+          "part_time_share": 0.08357771260997067
+        },
+        {
+          "unit": "UK Athletics",
+          "headcount": 917,
+          "payroll": 43438995.0,
+          "median": 5850.0,
+          "mean": 47370.76881134133,
+          "full_time": 302,
+          "part_time": 615,
+          "headcount_share": 0.033957932158198784,
+          "payroll_share": 0.020221721186862846,
+          "part_time_share": 0.6706652126499455
+        },
+        {
+          "unit": "College of Engineering",
+          "headcount": 430,
+          "payroll": 43363832.0,
+          "median": 90063.0,
+          "mean": 100846.12093023256,
+          "full_time": 378,
+          "part_time": 52,
+          "headcount_share": 0.01592356687898089,
+          "payroll_share": 0.020186731306697153,
+          "part_time_share": 0.12093023255813953
+        },
+        {
+          "unit": "Physical Plant",
+          "headcount": 724,
+          "payroll": 40615040.0,
+          "median": 48464.0,
+          "mean": 56098.12154696132,
+          "full_time": 721,
+          "part_time": 3,
+          "headcount_share": 0.02681084283809806,
+          "payroll_share": 0.018907113640020495,
+          "part_time_share": 0.004143646408839779
+        },
+        {
+          "unit": "President",
+          "headcount": 505,
+          "payroll": 32942448.0,
+          "median": 58870.0,
+          "mean": 65232.570297029706,
+          "full_time": 477,
+          "part_time": 28,
+          "headcount_share": 0.01870093319508221,
+          "payroll_share": 0.015335368570767524,
+          "part_time_share": 0.055445544554455446
+        },
+        {
+          "unit": "Finance Administration",
+          "headcount": 354,
+          "payroll": 28840830.0,
+          "median": 62378.5,
+          "mean": 81471.27118644067,
+          "full_time": 347,
+          "part_time": 7,
+          "headcount_share": 0.013109169011998222,
+          "payroll_share": 0.013425983337268958,
+          "part_time_share": 0.01977401129943503
+        },
+        {
+          "unit": "College of Business & Economics",
+          "headcount": 203,
+          "payroll": 28480971.5,
+          "median": 109311.0,
+          "mean": 140300.35221674878,
+          "full_time": 178,
+          "part_time": 25,
+          "headcount_share": 0.007517404828914235,
+          "payroll_share": 0.013258462006406615,
+          "part_time_share": 0.12315270935960591
+        },
+        {
+          "unit": "College of Public Health",
+          "headcount": 298,
+          "payroll": 27355468.92,
+          "median": 81274.0,
+          "mean": 91796.8755704698,
+          "full_time": 270,
+          "part_time": 28,
+          "headcount_share": 0.011035402162642571,
+          "payroll_share": 0.012734518039290094,
+          "part_time_share": 0.09395973154362416
+        },
+        {
+          "unit": "Information and Technology Services (ITS)",
+          "headcount": 238,
+          "payroll": 20574017.0,
+          "median": 74578.5,
+          "mean": 86445.44957983193,
+          "full_time": 238,
+          "part_time": 0,
+          "headcount_share": 0.008813509109761516,
+          "payroll_share": 0.00957761650488867,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "College of Education",
+          "headcount": 238,
+          "payroll": 18505660.75,
+          "median": 79170.0,
+          "mean": 77754.87710084034,
+          "full_time": 200,
+          "part_time": 38,
+          "headcount_share": 0.008813509109761516,
+          "payroll_share": 0.008614755292224675,
+          "part_time_share": 0.15966386554621848
+        },
+        {
+          "unit": "President's Office",
+          "headcount": 177,
+          "payroll": 18439322.0,
+          "median": 70035.0,
+          "mean": 104176.9604519774,
+          "full_time": 171,
+          "part_time": 6,
+          "headcount_share": 0.006554584505999111,
+          "payroll_share": 0.00858387327696661,
+          "part_time_share": 0.03389830508474576
+        },
+        {
+          "unit": "College of Nursing",
+          "headcount": 251,
+          "payroll": 18344987.09,
+          "median": 74433.0,
+          "mean": 73087.59796812749,
+          "full_time": 182,
+          "part_time": 69,
+          "headcount_share": 0.009294919271219079,
+          "payroll_share": 0.008539958489154236,
+          "part_time_share": 0.2749003984063745
+        },
+        {
+          "unit": "College of Health Sciences",
+          "headcount": 205,
+          "payroll": 16911432.0,
+          "median": 80247.0,
+          "mean": 82494.79024390243,
+          "full_time": 170,
+          "part_time": 35,
+          "headcount_share": 0.007591467930676937,
+          "payroll_share": 0.007872609915919794,
+          "part_time_share": 0.17073170731707318
+        },
+        {
+          "unit": "College of Pharmacy",
+          "headcount": 144,
+          "payroll": 15634155.84,
+          "median": 81200.25,
+          "mean": 108570.52666666667,
+          "full_time": 139,
+          "part_time": 5,
+          "headcount_share": 0.005332543326914531,
+          "payroll_share": 0.00727801231102247,
+          "part_time_share": 0.034722222222222224
+        },
+        {
+          "unit": "College of Social Work",
+          "headcount": 368,
+          "payroll": 14610752.75,
+          "median": 17280.0,
+          "mean": 39703.13247282609,
+          "full_time": 158,
+          "part_time": 210,
+          "headcount_share": 0.013627610724337135,
+          "payroll_share": 0.006801597699041831,
+          "part_time_share": 0.5706521739130435
+        },
+        {
+          "unit": "College of Dentistry",
+          "headcount": 132,
+          "payroll": 14020026.67,
+          "median": 106856.5,
+          "mean": 106212.32325757576,
+          "full_time": 117,
+          "part_time": 15,
+          "headcount_share": 0.004888164716338321,
+          "payroll_share": 0.006526602891091775,
+          "part_time_share": 0.11363636363636363
+        },
+        {
+          "unit": "Police",
+          "headcount": 206,
+          "payroll": 13178786.0,
+          "median": 55192.5,
+          "mean": 63974.68932038835,
+          "full_time": 206,
+          "part_time": 0,
+          "headcount_share": 0.0076284994815582876,
+          "payroll_share": 0.006134988529852762,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "College of Fine Arts",
+          "headcount": 219,
+          "payroll": 12972721.5,
+          "median": 58500.0,
+          "mean": 59236.17123287671,
+          "full_time": 158,
+          "part_time": 61,
+          "headcount_share": 0.008109909643015849,
+          "payroll_share": 0.006039061382700525,
+          "part_time_share": 0.2785388127853881
+        },
+        {
+          "unit": "Human Resources",
+          "headcount": 163,
+          "payroll": 12088900.0,
+          "median": 61095.0,
+          "mean": 74165.03067484662,
+          "full_time": 154,
+          "part_time": 9,
+          "headcount_share": 0.006036142793660199,
+          "payroll_share": 0.0056276247932500805,
+          "part_time_share": 0.05521472392638037
+        },
+        {
+          "unit": "College of Communication and Information",
+          "headcount": 178,
+          "payroll": 11669383.0,
+          "median": 66800.125,
+          "mean": 65558.33146067416,
+          "full_time": 139,
+          "part_time": 39,
+          "headcount_share": 0.006591616056880462,
+          "payroll_share": 0.005432331237145729,
+          "part_time_share": 0.21910112359550563
+        },
+        {
+          "unit": "UK Libraries",
+          "headcount": 146,
+          "payroll": 9914997.0,
+          "median": 62981.0,
+          "mean": 67910.93835616438,
+          "full_time": 142,
+          "part_time": 4,
+          "headcount_share": 0.005406606428677233,
+          "payroll_share": 0.004615629456956395,
+          "part_time_share": 0.0273972602739726
+        },
+        {
+          "unit": "Administration",
+          "headcount": 150,
+          "payroll": 9834593.0,
+          "median": 54948.5,
+          "mean": 65563.95333333334,
+          "full_time": 150,
+          "part_time": 0,
+          "headcount_share": 0.005554732632202636,
+          "payroll_share": 0.004578199786442413,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "College of Law",
+          "headcount": 83,
+          "payroll": 7551414.75,
+          "median": 72573.0,
+          "mean": 90980.90060240965,
+          "full_time": 64,
+          "part_time": 19,
+          "headcount_share": 0.0030736187231521256,
+          "payroll_share": 0.0035153346351789127,
+          "part_time_share": 0.2289156626506024
+        },
+        {
+          "unit": "Provost Administration/Support, Other",
+          "headcount": 47,
+          "payroll": 6513518.0,
+          "median": 73689.0,
+          "mean": 138585.48936170212,
+          "full_time": 47,
+          "part_time": 0,
+          "headcount_share": 0.0017404828914234928,
+          "payroll_share": 0.003032172934516844,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "College of Design",
+          "headcount": 79,
+          "payroll": 5809648.75,
+          "median": 76287.75,
+          "mean": 73539.85759493671,
+          "full_time": 61,
+          "part_time": 18,
+          "headcount_share": 0.002925492519626722,
+          "payroll_share": 0.0027045077174576958,
+          "part_time_share": 0.22784810126582278
+        },
+        {
+          "unit": "Academic Excellence",
+          "headcount": 74,
+          "payroll": 5286891.0,
+          "median": 63736.5,
+          "mean": 71444.47297297297,
+          "full_time": 74,
+          "part_time": 0,
+          "headcount_share": 0.0027403347652199673,
+          "payroll_share": 0.0024611535268561,
+          "part_time_share": 0.0
+        },
+        {
+          "unit": "Graduate School",
+          "headcount": 44,
+          "payroll": 4151598.0,
+          "median": 85378.375,
+          "mean": 94354.5,
+          "full_time": 36,
+          "part_time": 8,
+          "headcount_share": 0.00162938823877944,
+          "payroll_share": 0.0019326519233683335,
+          "part_time_share": 0.18181818181818182
+        },
+        {
+          "unit": "Lewis Honors College",
+          "headcount": 29,
+          "payroll": 1899251.5,
+          "median": 65998.5,
+          "mean": 65491.43103448276,
+          "full_time": 22,
+          "part_time": 7,
+          "headcount_share": 0.0010739149755591764,
+          "payroll_share": 0.000884139568531248,
+          "part_time_share": 0.2413793103448276
+        }
+      ],
+      "by_eeo": [
+        {
+          "eeo_category": "Executive/Admin/Managerial",
+          "headcount": 759,
+          "payroll": 135216923.0,
+          "median": 144573.0,
+          "full_time": 750,
+          "part_time": 9,
+          "median_ft": 144755.0
+        },
+        {
+          "eeo_category": "Faculty",
+          "headcount": 3849,
+          "payroll": 654516125.55,
+          "median": 123361.0,
+          "full_time": 3227,
+          "part_time": 622,
+          "median_ft": 138980.25
+        },
+        {
+          "eeo_category": "Professional",
+          "headcount": 12355,
+          "payroll": 934855388.0,
+          "median": 70000.0,
+          "full_time": 8770,
+          "part_time": 3585,
+          "median_ft": 77380.0
+        },
+        {
+          "eeo_category": "Not Reportable",
+          "headcount": 1254,
+          "payroll": 80849825.0,
+          "median": 65581.0,
+          "full_time": 1209,
+          "part_time": 45,
+          "median_ft": 65581.0
+        },
+        {
+          "eeo_category": "Skilled Crafts",
+          "headcount": 103,
+          "payroll": 5576944.0,
+          "median": 52437.0,
+          "full_time": 103,
+          "part_time": 0,
+          "median_ft": 52437.0
+        },
+        {
+          "eeo_category": "Office & Clerical",
+          "headcount": 3127,
+          "payroll": 142355691.0,
+          "median": 45074.0,
+          "full_time": 2726,
+          "part_time": 401,
+          "median_ft": 46634.0
+        },
+        {
+          "eeo_category": "Technical & Paraprofessional",
+          "headcount": 3373,
+          "payroll": 127975601.0,
+          "median": 41330.0,
+          "full_time": 1969,
+          "part_time": 1404,
+          "median_ft": 47570.0
+        },
+        {
+          "eeo_category": "Service & Maintenance",
+          "headcount": 2184,
+          "payroll": 66788896.0,
+          "median": 34838.0,
+          "full_time": 857,
+          "part_time": 1327,
+          "median_ft": 41457.0
+        }
+      ],
+      "research": {
+        "records": 2619,
+        "share_of_headcount": 0.09698563175825804,
+        "payroll": 182071273.0,
+        "share_of_payroll": 0.08475781998969335,
+        "median": 63120.0,
+        "by_category": [
+          {
+            "research_category": "Research Support Staff",
+            "headcount": 911,
+            "payroll": 65856345.0,
+            "median": 67569.0,
+            "mean": 72290.17014270033,
+            "p25": 48651.0,
+            "p75": 84119.5
+          },
+          {
+            "research_category": "Research Administration",
+            "headcount": 840,
+            "payroll": 57792065.0,
+            "median": 60911.5,
+            "mean": 68800.07738095238,
+            "p25": 52423.75,
+            "p75": 79042.5
+          },
+          {
+            "research_category": "Research Faculty/Scientist",
+            "headcount": 378,
+            "payroll": 26570287.0,
+            "median": 68640.0,
+            "mean": 70291.76455026455,
+            "p25": 58531.0,
+            "p75": 78270.0
+          },
+          {
+            "research_category": "Postdoctoral",
+            "headcount": 276,
+            "payroll": 16361568.0,
+            "median": 60000.0,
+            "mean": 59281.04347826087,
+            "p25": 54533.75,
+            "p75": 62652.0
+          },
+          {
+            "research_category": "Clinical Research",
+            "headcount": 214,
+            "payroll": 15491008.0,
+            "median": 67409.5,
+            "mean": 72387.88785046729,
+            "p25": 60054.75,
+            "p75": 84638.0
+          }
+        ],
+        "by_unit": [
+          {
+            "unit": "Research Administration",
+            "headcount": 851,
+            "median": 64527.0
+          },
+          {
+            "unit": "College of Medicine",
+            "headcount": 704,
+            "median": 64146.0
+          },
+          {
+            "unit": "College of Ag, Food and Environment",
+            "headcount": 314,
+            "median": 51272.0
+          },
+          {
+            "unit": "Hospitals",
+            "headcount": 227,
+            "median": 57283.0
+          },
+          {
+            "unit": "College of Public Health",
+            "headcount": 115,
+            "median": 76000.0
+          },
+          {
+            "unit": "College of Engineering",
+            "headcount": 89,
+            "median": 72100.0
+          },
+          {
+            "unit": "College of Nursing",
+            "headcount": 74,
+            "median": 76305.0
+          },
+          {
+            "unit": "College of Arts and Sciences",
+            "headcount": 47,
+            "median": 56472.0
+          },
+          {
+            "unit": "Finance Administration",
+            "headcount": 42,
+            "median": 68263.0
+          },
+          {
+            "unit": "College of Pharmacy",
+            "headcount": 38,
+            "median": 57690.0
+          },
+          {
+            "unit": "President",
+            "headcount": 30,
+            "median": 89707.0
+          },
+          {
+            "unit": "College of Health Sciences",
+            "headcount": 27,
+            "median": 81349.0
+          },
+          {
+            "unit": "College of Education",
+            "headcount": 18,
+            "median": 64824.0
+          },
+          {
+            "unit": "College of Dentistry",
+            "headcount": 16,
+            "median": 80188.0
+          },
+          {
+            "unit": "Information and Technology Services (ITS)",
+            "headcount": 7,
+            "median": 107850.0
+          }
+        ],
+        "postdoc": {
+          "count": 276,
+          "count_full_time": 246,
+          "median": 60000.0,
+          "mean": 59281.04347826087,
+          "min": 25092.0,
+          "max": 97235.0,
+          "nih_entry_stipend": 61008,
+          "nih_source": "NIH NOT-OD-24-104 (FY2024 NRSA stipend levels)",
+          "share_ft_below_nih_entry": 0.5853658536585366,
+          "count_ft_below_nih_entry": 144
+        }
+      },
+      "faculty": {
+        "records": 2874,
+        "by_rank": [
+          {
+            "faculty_rank": "Instructor",
+            "headcount": 65,
+            "median": 75000.0,
+            "mean": 82128.60769230769
+          },
+          {
+            "faculty_rank": "Assistant Professor",
+            "headcount": 1115,
+            "median": 142856.0,
+            "mean": 198493.95495964127
+          },
+          {
+            "faculty_rank": "Associate Professor",
+            "headcount": 814,
+            "median": 136828.0,
+            "mean": 199928.9632923833
+          },
+          {
+            "faculty_rank": "Professor",
+            "headcount": 880,
+            "median": 182604.0,
+            "mean": 241851.19272727272
+          }
+        ],
+        "ladder_by_college": [
+          {
+            "unit": "College of Ag, Food and Environment",
+            "Assistant Professor": 92791.0,
+            "Associate Professor": 112401.375,
+            "Professor": 149514.0
+          },
+          {
+            "unit": "College of Arts and Sciences",
+            "Assistant Professor": 87000.0,
+            "Associate Professor": 98427.75,
+            "Professor": 127760.25
+          },
+          {
+            "unit": "College of Business & Economics",
+            "Assistant Professor": 187775.25,
+            "Associate Professor": 203000.25,
+            "Professor": 292892.625
+          },
+          {
+            "unit": "College of Education",
+            "Assistant Professor": 84999.75,
+            "Associate Professor": 97517.25,
+            "Professor": 133826.625
+          },
+          {
+            "unit": "College of Engineering",
+            "Assistant Professor": 102157.5,
+            "Associate Professor": 117153.0,
+            "Professor": 162761.25
+          },
+          {
+            "unit": "College of Fine Arts",
+            "Assistant Professor": 66489.0,
+            "Associate Professor": 77099.25,
+            "Professor": 93728.25
+          },
+          {
+            "unit": "College of Health Sciences",
+            "Assistant Professor": 97000.0,
+            "Associate Professor": 117824.5,
+            "Professor": 147868.5
+          },
+          {
+            "unit": "College of Medicine",
+            "Assistant Professor": 245000.0,
+            "Associate Professor": 283169.0,
+            "Professor": 317227.5
+          }
+        ],
+        "professor_to_assistant_ratio": 1.2782382259058072
+      },
+      "dispersion": {
+        "min_dept_size": 30,
+        "departments_considered": 181,
+        "most_dispersed": [
+          {
+            "department": "Neurosurgery",
+            "headcount": 35,
+            "median": 84123.0,
+            "p10": 58404.2,
+            "p90": 964656.0,
+            "ratio_p90_p10": 16.51689433294181
+          },
+          {
+            "department": "Mens Sports",
+            "headcount": 64,
+            "median": 116840.0,
+            "p10": 41021.5,
+            "p90": 525000.0,
+            "ratio_p90_p10": 12.798166814962885
+          },
+          {
+            "department": "Orthopaedic Surgery",
+            "headcount": 50,
+            "median": 509571.5,
+            "p10": 75230.0,
+            "p90": 893184.7000000001,
+            "ratio_p90_p10": 11.872719659710222
+          },
+          {
+            "department": "EVPHA Administration",
+            "headcount": 56,
+            "median": 88769.5,
+            "p10": 57921.0,
+            "p90": 583400.0,
+            "ratio_p90_p10": 10.072339911258439
+          },
+          {
+            "department": "Ophthalmology & Visual Science",
+            "headcount": 46,
+            "median": 185041.5,
+            "p10": 68091.0,
+            "p90": 548864.0,
+            "ratio_p90_p10": 8.060742241999677
+          },
+          {
+            "department": "Internal Medicine & Divisions - Cardiolo",
+            "headcount": 54,
+            "median": 350000.0,
+            "p10": 62629.0,
+            "p90": 456517.0,
+            "ratio_p90_p10": 7.289227035398937
+          },
+          {
+            "department": "CH/GS Hospital Administration",
+            "headcount": 37,
+            "median": 100797.0,
+            "p10": 57725.4,
+            "p90": 312399.99999999994,
+            "ratio_p90_p10": 5.411829108156893
+          },
+          {
+            "department": "Womens Sports",
+            "headcount": 55,
+            "median": 100000.0,
+            "p10": 48500.0,
+            "p90": 250000.0,
+            "ratio_p90_p10": 5.154639175257732
+          },
+          {
+            "department": "Athletics - Administrative Support",
+            "headcount": 44,
+            "median": 72293.5,
+            "p10": 42769.1,
+            "p90": 215508.00000000003,
+            "ratio_p90_p10": 5.038871521729474
+          },
+          {
+            "department": "Behavioral Science",
+            "headcount": 57,
+            "median": 120227.0,
+            "p10": 49454.4,
+            "p90": 248180.59999999998,
+            "ratio_p90_p10": 5.018372480507295
+          },
+          {
+            "department": "Pharmaceutical Sciences",
+            "headcount": 54,
+            "median": 75123.0,
+            "p10": 39829.9,
+            "p90": 194774.2,
+            "ratio_p90_p10": 4.890150364424716
+          },
+          {
+            "department": "Spinal Cord & Brain Injury Res",
+            "headcount": 52,
+            "median": 56547.0,
+            "p10": 37149.0,
+            "p90": 178041.59999999995,
+            "ratio_p90_p10": 4.792635064200919
+          }
+        ]
+      },
+      "residents": {
+        "count": 952,
+        "median": 66575.0,
+        "p10": 64822.0,
+        "p90": 73241.0,
+        "iqr": 4982.0,
+        "full_time_iqr": 50074.0
+      },
+      "floor": {
+        "thresholds": {
+          "35000": {
+            "count": 365,
+            "share": 0.018612003467441744
+          },
+          "40000": {
+            "count": 1364,
+            "share": 0.06955280199887819
+          },
+          "45000": {
+            "count": 2654,
+            "share": 0.13533221151394625
+          },
+          "50000": {
+            "count": 4037,
+            "share": 0.20585385752893784
+          }
+        },
+        "full_time_p10": 42411.0
+      },
+      "top_roles": [
+        {
+          "job_title": "Assistant Coach/Football",
+          "unit": "UK Athletics",
+          "department": "Mens Sports",
+          "salary": 1700000.0
+        },
+        {
+          "job_title": "Provost/Co-EVPHA",
+          "unit": "Provost Administration/Support, Other",
+          "department": "Provost",
+          "salary": 1478011.0
+        },
+        {
+          "job_title": "Athletics Director",
+          "unit": "UK Athletics",
+          "department": "Athletics - Administrative Support",
+          "salary": 1425000.0
+        },
+        {
+          "job_title": "EVPFA/Co-EVPHA",
+          "unit": "Finance Administration",
+          "department": "EVPFA",
+          "salary": 1358026.0
+        },
+        {
+          "job_title": "Assistant Coach/Football",
+          "unit": "UK Athletics",
+          "department": "Mens Sports",
+          "salary": 1350000.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Surgery-Cardiovascular",
+          "salary": 1250000.0
+        },
+        {
+          "job_title": "President",
+          "unit": "President's Office",
+          "department": "Office Of The President",
+          "salary": 1117991.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Orthopaedic Surgery",
+          "salary": 1114877.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Surgery-Cardiovascular",
+          "salary": 1100000.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Orthopaedic Surgery",
+          "salary": 1078962.0
+        },
+        {
+          "job_title": "Special Faculty",
+          "unit": "College of Medicine",
+          "department": "Neurosurgery",
+          "salary": 1074015.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Neurosurgery",
+          "salary": 1064550.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Neurosurgery",
+          "salary": 1060699.0
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "unit": "College of Medicine",
+          "department": "Orthopaedic Surgery",
+          "salary": 1034148.0
+        },
+        {
+          "job_title": "Special Faculty",
+          "unit": "College of Medicine",
+          "department": "Surgery-Thoracic",
+          "salary": 1000000.0
+        }
+      ]
+    }
+  },
+  "latest": "2025-26",
+  "year_list": [
+    "2024-25",
+    "2025-26"
+  ],
+  "comparison": {
+    "prev": "2024-25",
+    "curr": "2025-26",
+    "headline": {
+      "records": {
+        "prev": 26430,
+        "curr": 27004,
+        "delta": 574,
+        "pct": 0.02171774498675738
+      },
+      "payroll": {
+        "prev": 2061046209.43,
+        "curr": 2148135393.55,
+        "delta": 87089184.12000012,
+        "pct": 0.042254843060547165
+      },
+      "median": {
+        "prev": 60779.0,
+        "curr": 61465.0,
+        "pct": 0.011286793135786954
+      },
+      "mean": {
+        "prev": 77981.31704237609,
+        "curr": 79548.7851262776,
+        "pct": 0.020100559253823924
+      },
+      "median_ft": {
+        "prev": 68435.0,
+        "curr": 69804.0,
+        "pct": 0.020004383721779817
+      }
+    },
+    "by_unit": [
+      {
+        "unit": "Hospitals",
+        "n_prev": 10547,
+        "med_prev": 57845.0,
+        "pay_prev": 645656265.0,
+        "n_curr": 10909,
+        "med_curr": 57002.0,
+        "pay_curr": 671822797.0,
+        "n_delta": 362,
+        "med_pct": -0.014573428991269788,
+        "pay_pct": 0.04052703182551798
+      },
+      {
+        "unit": "Healthcare",
+        "n_prev": 1540,
+        "med_prev": 83768.0,
+        "pay_prev": 144924743.0,
+        "n_curr": 1786,
+        "med_curr": 80000.0,
+        "pay_curr": 165037586.0,
+        "n_delta": 246,
+        "med_pct": -0.04498137713685413,
+        "pay_pct": 0.13878129147346496
+      },
+      {
+        "unit": "President",
+        "n_prev": 402,
+        "med_prev": 57264.5,
+        "pay_prev": 27107955.89,
+        "n_curr": 505,
+        "med_curr": 58870.0,
+        "pay_curr": 32942448.0,
+        "n_delta": 103,
+        "med_pct": 0.028036567157663228,
+        "pay_pct": 0.21523172509485744
+      },
+      {
+        "unit": "College of Social Work",
+        "n_prev": 304,
+        "med_prev": 17280.0,
+        "pay_prev": 11718071.25,
+        "n_curr": 368,
+        "med_curr": 17280.0,
+        "pay_curr": 14610752.75,
+        "n_delta": 64,
+        "med_pct": 0.0,
+        "pay_pct": 0.24685645259240085
+      },
+      {
+        "unit": "College of Public Health",
+        "n_prev": 236,
+        "med_prev": 75645.0,
+        "pay_prev": 20912597.92,
+        "n_curr": 298,
+        "med_curr": 81274.0,
+        "pay_curr": 27355468.92,
+        "n_delta": 62,
+        "med_pct": 0.07441337828012418,
+        "pay_pct": 0.30808563453698334
+      },
+      {
+        "unit": "College of Nursing",
+        "n_prev": 216,
+        "med_prev": 61625.0,
+        "pay_prev": 15320098.57,
+        "n_curr": 251,
+        "med_curr": 74433.0,
+        "pay_curr": 18344987.09,
+        "n_delta": 35,
+        "med_pct": 0.20783772819472612,
+        "pay_pct": 0.19744576095113198
+      },
+      {
+        "unit": "College of Medicine",
+        "n_prev": 2695,
+        "med_prev": 99478.0,
+        "pay_prev": 464109731.97,
+        "n_curr": 2728,
+        "med_curr": 104899.5,
+        "pay_curr": 495009447.54,
+        "n_delta": 33,
+        "med_pct": 0.054499487323830476,
+        "pay_pct": 0.06657846936077028
+      },
+      {
+        "unit": "Ambulatory Clinics",
+        "n_prev": 1329,
+        "med_prev": 53560.0,
+        "pay_prev": 80946041.0,
+        "n_curr": 1360,
+        "med_curr": 54538.0,
+        "pay_curr": 83681961.0,
+        "n_delta": 31,
+        "med_pct": 0.018259895444361574,
+        "pay_pct": 0.033799305885756636
+      },
+      {
+        "unit": "UK Libraries",
+        "n_prev": 129,
+        "med_prev": 64000.0,
+        "pay_prev": 8656495.0,
+        "n_curr": 146,
+        "med_curr": 62981.0,
+        "pay_curr": 9914997.0,
+        "n_delta": 17,
+        "med_pct": -0.015921874999999974,
+        "pay_pct": 0.14538239784115858
+      },
+      {
+        "unit": "College of Health Sciences",
+        "n_prev": 189,
+        "med_prev": 79061.0,
+        "pay_prev": 15854983.14,
+        "n_curr": 205,
+        "med_curr": 80247.0,
+        "pay_curr": 16911432.0,
+        "n_delta": 16,
+        "med_pct": 0.015001075119211782,
+        "pay_pct": 0.06663197624819417
+      },
+      {
+        "unit": "Finance Administration",
+        "n_prev": 338,
+        "med_prev": 60589.5,
+        "pay_prev": 26823963.0,
+        "n_curr": 354,
+        "med_curr": 62378.5,
+        "pay_curr": 28840830.0,
+        "n_delta": 16,
+        "med_pct": 0.029526568134742748,
+        "pay_pct": 0.0751890017146235
+      },
+      {
+        "unit": "Police",
+        "n_prev": 193,
+        "med_prev": 49275.0,
+        "pay_prev": 11802714.0,
+        "n_curr": 206,
+        "med_curr": 55192.5,
+        "pay_curr": 13178786.0,
+        "n_delta": 13,
+        "med_pct": 0.12009132420091317,
+        "pay_pct": 0.11658945561165002
+      },
+      {
+        "unit": "President's Office",
+        "n_prev": 167,
+        "med_prev": 70000.0,
+        "pay_prev": 17307504.0,
+        "n_curr": 177,
+        "med_curr": 70035.0,
+        "pay_curr": 18439322.0,
+        "n_delta": 10,
+        "med_pct": 0.0004999999999999449,
+        "pay_pct": 0.06539464038257625
+      },
+      {
+        "unit": "Physical Plant",
+        "n_prev": 714,
+        "med_prev": 48131.0,
+        "pay_prev": 39812758.0,
+        "n_curr": 724,
+        "med_curr": 48464.0,
+        "pay_curr": 40615040.0,
+        "n_delta": 10,
+        "med_pct": 0.006918617938542759,
+        "pay_pct": 0.02015137961554947
+      },
+      {
+        "unit": "Information and Technology Services (ITS)",
+        "n_prev": 230,
+        "med_prev": 74905.0,
+        "pay_prev": 19669461.0,
+        "n_curr": 238,
+        "med_curr": 74578.5,
+        "pay_curr": 20574017.0,
+        "n_delta": 8,
+        "med_pct": -0.00435885454909557,
+        "pay_pct": 0.04598783871098444
+      },
+      {
+        "unit": "College of Design",
+        "n_prev": 72,
+        "med_prev": 75159.75,
+        "pay_prev": 5357047.25,
+        "n_curr": 79,
+        "med_curr": 76287.75,
+        "pay_curr": 5809648.75,
+        "n_delta": 7,
+        "med_pct": 0.015008032889944456,
+        "pay_pct": 0.08448712114682211
+      },
+      {
+        "unit": "College of Fine Arts",
+        "n_prev": 216,
+        "med_prev": 58015.25,
+        "pay_prev": 12520105.25,
+        "n_curr": 219,
+        "med_curr": 58500.0,
+        "pay_curr": 12972721.5,
+        "n_delta": 3,
+        "med_pct": 0.008355561684212365,
+        "pay_pct": 0.03615115376126732
+      },
+      {
+        "unit": "Lewis Honors College",
+        "n_prev": 27,
+        "med_prev": 65023.5,
+        "pay_prev": 1878518.5,
+        "n_curr": 29,
+        "med_curr": 65998.5,
+        "pay_curr": 1899251.5,
+        "n_delta": 2,
+        "med_pct": 0.01499457888301925,
+        "pay_pct": 0.011036888910064047
+      },
+      {
+        "unit": "College of Law",
+        "n_prev": 82,
+        "med_prev": 73250.0,
+        "pay_prev": 7381441.25,
+        "n_curr": 83,
+        "med_curr": 72573.0,
+        "pay_curr": 7551414.75,
+        "n_delta": 1,
+        "med_pct": -0.009242320819112582,
+        "pay_pct": 0.02302714256514604
+      },
+      {
+        "unit": "College of Communication and Information",
+        "n_prev": 177,
+        "med_prev": 65649.75,
+        "pay_prev": 11778333.0,
+        "n_curr": 178,
+        "med_curr": 66800.125,
+        "pay_curr": 11669383.0,
+        "n_delta": 1,
+        "med_pct": 0.017522915167232256,
+        "pay_pct": -0.009250035637470955
+      },
+      {
+        "unit": "Academic Excellence",
+        "n_prev": 77,
+        "med_prev": 63500.0,
+        "pay_prev": 5482224.0,
+        "n_curr": 74,
+        "med_curr": 63736.5,
+        "pay_curr": 5286891.0,
+        "n_delta": -3,
+        "med_pct": 0.0037244094488189106,
+        "pay_pct": -0.03563024787020741
+      },
+      {
+        "unit": "College of Pharmacy",
+        "n_prev": 149,
+        "med_prev": 74134.0,
+        "pay_prev": 15611928.33,
+        "n_curr": 144,
+        "med_curr": 81200.25,
+        "pay_curr": 15634155.84,
+        "n_delta": -5,
+        "med_pct": 0.09531726333396273,
+        "pay_pct": 0.0014237517320194737
+      },
+      {
+        "unit": "Administration",
+        "n_prev": 155,
+        "med_prev": 52520.0,
+        "pay_prev": 9549937.0,
+        "n_curr": 150,
+        "med_curr": 54948.5,
+        "pay_curr": 9834593.0,
+        "n_delta": -5,
+        "med_pct": 0.04623952779893381,
+        "pay_pct": 0.029807107628039953
+      },
+      {
+        "unit": "College of Arts and Sciences",
+        "n_prev": 687,
+        "med_prev": 83193.0,
+        "pay_prev": 60738530.79,
+        "n_curr": 682,
+        "med_curr": 85243.625,
+        "pay_curr": 61178981.54,
+        "n_delta": -5,
+        "med_pct": 0.02464900893103983,
+        "pay_pct": 0.007251587160098216
+      },
+      {
+        "unit": "Human Resources",
+        "n_prev": 171,
+        "med_prev": 58885.0,
+        "pay_prev": 12264892.0,
+        "n_curr": 163,
+        "med_curr": 61095.0,
+        "pay_curr": 12088900.0,
+        "n_delta": -8,
+        "med_pct": 0.03753078033455037,
+        "pay_pct": -0.014349249875172165
+      },
+      {
+        "unit": "College of Education",
+        "n_prev": 248,
+        "med_prev": 74491.625,
+        "pay_prev": 18565890.0,
+        "n_curr": 238,
+        "med_curr": 79170.0,
+        "pay_curr": 18505660.75,
+        "n_delta": -10,
+        "med_pct": 0.06280404005148221,
+        "pay_pct": -0.0032440809462944697
+      },
+      {
+        "unit": "Provost Administration/Support, Other",
+        "n_prev": 61,
+        "med_prev": 72320.0,
+        "pay_prev": 7238236.0,
+        "n_curr": 47,
+        "med_curr": 73689.0,
+        "pay_curr": 6513518.0,
+        "n_delta": -14,
+        "med_pct": 0.018929756637168227,
+        "pay_pct": -0.10012356601801875
+      },
+      {
+        "unit": "College of Business & Economics",
+        "n_prev": 218,
+        "med_prev": 106109.0,
+        "pay_prev": 28746908.0,
+        "n_curr": 203,
+        "med_curr": 109311.0,
+        "pay_curr": 28480971.5,
+        "n_delta": -15,
+        "med_pct": 0.030176516600853853,
+        "pay_pct": -0.009250960138043385
+      },
+      {
+        "unit": "Graduate School",
+        "n_prev": 61,
+        "med_prev": 70909.0,
+        "pay_prev": 5141155.75,
+        "n_curr": 44,
+        "med_curr": 85378.375,
+        "pay_curr": 4151598.0,
+        "n_delta": -17,
+        "med_pct": 0.204055550071218,
+        "pay_pct": -0.19247768364146522
+      },
+      {
+        "unit": "College of Engineering",
+        "n_prev": 448,
+        "med_prev": 85992.0,
+        "pay_prev": 43198148.75,
+        "n_curr": 430,
+        "med_curr": 90063.0,
+        "pay_curr": 43363832.0,
+        "n_delta": -18,
+        "med_pct": 0.04734161317331842,
+        "pay_pct": 0.003835424776160057
+      },
+      {
+        "unit": "College of Ag, Food and Environment",
+        "n_prev": 2107,
+        "med_prev": 50200.0,
+        "pay_prev": 127284361.15,
+        "n_curr": 2086,
+        "med_curr": 51752.5,
+        "pay_curr": 126881076.45,
+        "n_delta": -21,
+        "med_pct": 0.03092629482071718,
+        "pay_pct": -0.0031683758818158436
+      },
+      {
+        "unit": "UK Athletics",
+        "n_prev": 945,
+        "med_prev": 5850.0,
+        "pay_prev": 42134530.0,
+        "n_curr": 917,
+        "med_curr": 5850.0,
+        "pay_curr": 43438995.0,
+        "n_delta": -28,
+        "med_pct": 0.0,
+        "pay_pct": 0.030959524171742192
+      },
+      {
+        "unit": "Research Administration",
+        "n_prev": 985,
+        "med_prev": 66816.0,
+        "pay_prev": 71083314.0,
+        "n_curr": 851,
+        "med_curr": 64527.0,
+        "pay_curr": 61573902.0,
+        "n_delta": -134,
+        "med_pct": -0.03425826149425293,
+        "pay_pct": -0.13377839980842765
+      },
+      {
+        "unit": "College of Dentistry",
+        "n_prev": 315,
+        "med_prev": 60424.0,
+        "pay_prev": 24467325.67,
+        "n_curr": 132,
+        "med_curr": 106856.5,
+        "pay_curr": 14020026.67,
+        "n_delta": -183,
+        "med_pct": 0.7684446577518866,
+        "pay_pct": -0.42698982066559465
+      }
+    ],
+    "by_eeo": [
+      {
+        "eeo_category": "Not Reportable",
+        "n_prev": 1222,
+        "med_prev": 63059.0,
+        "pay_prev": 75963462.0,
+        "n_curr": 1254,
+        "med_curr": 65581.0,
+        "pay_curr": 80849825.0,
+        "n_delta": 32,
+        "med_pct": 0.039994291060752696,
+        "pay_pct": 0.06432517517434899
+      },
+      {
+        "eeo_category": "Skilled Crafts",
+        "n_prev": 103,
+        "med_prev": 51355.0,
+        "pay_prev": 5473517.0,
+        "n_curr": 103,
+        "med_curr": 52437.0,
+        "pay_curr": 5576944.0,
+        "n_delta": 0,
+        "med_pct": 0.021069029305812448,
+        "pay_pct": 0.018895894540932323
+      },
+      {
+        "eeo_category": "Office & Clerical",
+        "n_prev": 3213,
+        "med_prev": 44387.0,
+        "pay_prev": 143944293.89,
+        "n_curr": 3127,
+        "med_curr": 45074.0,
+        "pay_curr": 142355691.0,
+        "n_delta": -86,
+        "med_pct": 0.015477504674792142,
+        "pay_pct": -0.011036233858731315
+      },
+      {
+        "eeo_category": "Executive/Admin/Managerial",
+        "n_prev": 734,
+        "med_prev": 142616.0,
+        "pay_prev": 129276735.5,
+        "n_curr": 759,
+        "med_curr": 144573.0,
+        "pay_curr": 135216923.0,
+        "n_delta": 25,
+        "med_pct": 0.013722163011162802,
+        "pay_pct": 0.04594939280470922
+      },
+      {
+        "eeo_category": "Technical & Paraprofessional",
+        "n_prev": 3445,
+        "med_prev": 41288.0,
+        "pay_prev": 129024562.0,
+        "n_curr": 3373,
+        "med_curr": 41330.0,
+        "pay_curr": 127975601.0,
+        "n_delta": -72,
+        "med_pct": 0.0010172447200154089,
+        "pay_pct": -0.008129932655768335
+      },
+      {
+        "eeo_category": "Professional",
+        "n_prev": 11859,
+        "med_prev": 69930.0,
+        "pay_prev": 894816887.4,
+        "n_curr": 12355,
+        "med_curr": 70000.0,
+        "pay_curr": 934855388.0,
+        "n_delta": 496,
+        "med_pct": 0.0010010010010010895,
+        "pay_pct": 0.04474490944883347
+      },
+      {
+        "eeo_category": "Service & Maintenance",
+        "n_prev": 2158,
+        "med_prev": 34902.0,
+        "pay_prev": 64110566.0,
+        "n_curr": 2184,
+        "med_curr": 34838.0,
+        "pay_curr": 66788896.0,
+        "n_delta": 26,
+        "med_pct": -0.0018337058048248922,
+        "pay_pct": 0.04177673302712681
+      },
+      {
+        "eeo_category": "Faculty",
+        "n_prev": 3696,
+        "med_prev": 124924.25,
+        "pay_prev": 618436185.64,
+        "n_curr": 3849,
+        "med_curr": 123361.0,
+        "pay_curr": 654516125.55,
+        "n_delta": 153,
+        "med_pct": -0.012513583231438252,
+        "pay_pct": 0.05834060287507592
+      }
+    ],
+    "matched_titles": {
+      "min_per_year": 20,
+      "titles_compared": 160,
+      "records_covered_curr": 17003,
+      "median_of_median_pct": 0.012140383772661911,
+      "share_with_increase": 0.68125,
+      "share_flat_or_down": 0.31875,
+      "biggest_gains": [
+        {
+          "job_title": "Temporary Professional Non-Admin",
+          "n_prev": 25,
+          "med_prev": 17400.0,
+          "pay_prev": 694274.4,
+          "n_curr": 20,
+          "med_curr": 20631.5,
+          "pay_curr": 613151.0,
+          "n_delta": -5,
+          "med_pct": 0.18571839080459762,
+          "pay_pct": -0.11684630745422853
+        },
+        {
+          "job_title": "Security Officer Senior",
+          "n_prev": 20,
+          "med_prev": 39478.5,
+          "pay_prev": 790464.0,
+          "n_curr": 24,
+          "med_curr": 44554.0,
+          "pay_curr": 1055691.0,
+          "n_delta": 4,
+          "med_pct": 0.128563648568208,
+          "pay_pct": 0.33553330701967443
+        },
+        {
+          "job_title": "Post-Doctoral Fellow",
+          "n_prev": 26,
+          "med_prev": 57090.0,
+          "pay_prev": 1564349.0,
+          "n_curr": 30,
+          "med_curr": 61942.0,
+          "pay_curr": 1894118.0,
+          "n_delta": 4,
+          "med_pct": 0.08498861446838335,
+          "pay_pct": 0.21080270451158922
+        },
+        {
+          "job_title": "Medical Lab Technician/UKHC",
+          "n_prev": 71,
+          "med_prev": 44886.0,
+          "pay_prev": 3394009.0,
+          "n_curr": 70,
+          "med_curr": 48266.5,
+          "pay_curr": 3393605.0,
+          "n_delta": -1,
+          "med_pct": 0.0753130151940471,
+          "pay_pct": -0.00011903327304085831
+        },
+        {
+          "job_title": "I/R/F Internal Medicine PGY1/UKHC",
+          "n_prev": 30,
+          "med_prev": 60779.0,
+          "pay_prev": 1823370.0,
+          "n_curr": 26,
+          "med_curr": 64822.0,
+          "pay_curr": 1685372.0,
+          "n_delta": -4,
+          "med_pct": 0.06651968607578285,
+          "pay_pct": -0.07568293873432164
+        },
+        {
+          "job_title": "Nurse Division Charge/UKHC",
+          "n_prev": 26,
+          "med_prev": 72627.0,
+          "pay_prev": 1816394.0,
+          "n_curr": 24,
+          "med_curr": 77114.0,
+          "pay_curr": 1743942.0,
+          "n_delta": -2,
+          "med_pct": 0.061781431148195676,
+          "pay_pct": -0.03988782169507277
+        },
+        {
+          "job_title": "Surgical Technologist/UKHC",
+          "n_prev": 54,
+          "med_prev": 52998.0,
+          "pay_prev": 2983261.0,
+          "n_curr": 56,
+          "med_curr": 56187.0,
+          "pay_curr": 3295523.0,
+          "n_delta": 2,
+          "med_pct": 0.06017208196535728,
+          "pay_pct": 0.10467136465766824
+        },
+        {
+          "job_title": "Post-Doctoral Scholar",
+          "n_prev": 212,
+          "med_prev": 56484.0,
+          "pay_prev": 11999936.0,
+          "n_curr": 243,
+          "med_curr": 59592.0,
+          "pay_curr": 14276850.0,
+          "n_delta": 31,
+          "med_pct": 0.055024431697471954,
+          "pay_pct": 0.18974384530050825
+        },
+        {
+          "job_title": "Clinical Faculty",
+          "n_prev": 1041,
+          "med_prev": 267400.0,
+          "pay_prev": 303855684.99,
+          "n_curr": 1090,
+          "med_curr": 279500.0,
+          "pay_curr": 333965573.59,
+          "n_delta": 49,
+          "med_pct": 0.045250560957367236,
+          "pay_pct": 0.0990927275261968
+        },
+        {
+          "job_title": "Staff Support Associate II/UKHC",
+          "n_prev": 30,
+          "med_prev": 43015.5,
+          "pay_prev": 1275785.0,
+          "n_curr": 29,
+          "med_curr": 44949.0,
+          "pay_curr": 1266794.0,
+          "n_delta": -1,
+          "med_pct": 0.044948913763643406,
+          "pay_pct": -0.007047425702606636
+        }
+      ],
+      "biggest_losses": [
+        {
+          "job_title": "Radiology Technologist/UKHC",
+          "n_prev": 76,
+          "med_prev": 67457.5,
+          "pay_prev": 4927396.0,
+          "n_curr": 81,
+          "med_curr": 64996.0,
+          "pay_curr": 5257796.0,
+          "n_delta": 5,
+          "med_pct": -0.036489641626209046,
+          "pay_pct": 0.06705367297452858
+        },
+        {
+          "job_title": "Part Time Technical/Paraprofessional",
+          "n_prev": 95,
+          "med_prev": 5021.0,
+          "pay_prev": 869288.0,
+          "n_curr": 80,
+          "med_curr": 4836.0,
+          "pay_curr": 727510.0,
+          "n_delta": -15,
+          "med_pct": -0.0368452499502091,
+          "pay_pct": -0.16309669522643822
+        },
+        {
+          "job_title": "Pharmacy Sr Tech I/Inpt/On-Call/UKHC",
+          "n_prev": 28,
+          "med_prev": 8279.5,
+          "pay_prev": 243268.0,
+          "n_curr": 29,
+          "med_curr": 7966.0,
+          "pay_curr": 246831.0,
+          "n_delta": 1,
+          "med_pct": -0.037864605350564684,
+          "pay_pct": 0.014646398211026534
+        },
+        {
+          "job_title": "Speech Language Pathologist/UKHC",
+          "n_prev": 25,
+          "med_prev": 78695.0,
+          "pay_prev": 1991490.0,
+          "n_curr": 27,
+          "med_curr": 75175.0,
+          "pay_curr": 2127482.0,
+          "n_delta": 2,
+          "med_pct": -0.04472965245568339,
+          "pay_pct": 0.06828655930986338
+        },
+        {
+          "job_title": "Athletic Trainer Outreach/UKHC",
+          "n_prev": 32,
+          "med_prev": 55849.5,
+          "pay_prev": 1821660.0,
+          "n_curr": 34,
+          "med_curr": 53002.5,
+          "pay_curr": 1877721.0,
+          "n_delta": 2,
+          "med_pct": -0.05097628447882252,
+          "pay_pct": 0.03077467804090772
+        },
+        {
+          "job_title": "Social Worker Senior/Inpatient/UKHC",
+          "n_prev": 61,
+          "med_prev": 64563.0,
+          "pay_prev": 3976927.0,
+          "n_curr": 65,
+          "med_curr": 61173.0,
+          "pay_curr": 4119819.0,
+          "n_delta": 4,
+          "med_pct": -0.052506853770735606,
+          "pay_pct": 0.03593025469162492
+        },
+        {
+          "job_title": "EHR Analyst Senior/UKHC",
+          "n_prev": 77,
+          "med_prev": 110085.0,
+          "pay_prev": 7745158.0,
+          "n_curr": 82,
+          "med_curr": 103505.0,
+          "pay_curr": 8278719.0,
+          "n_delta": 5,
+          "med_pct": -0.05977199436798841,
+          "pay_pct": 0.06888962110262953
+        },
+        {
+          "job_title": "Anesthesia Technician/UKHC",
+          "n_prev": 23,
+          "med_prev": 40373.0,
+          "pay_prev": 957614.0,
+          "n_curr": 24,
+          "med_curr": 37131.0,
+          "pay_curr": 967181.0,
+          "n_delta": 1,
+          "med_pct": -0.08030119139028558,
+          "pay_pct": 0.009990455444469193
+        },
+        {
+          "job_title": "Temporary Technical/Paraprofessional",
+          "n_prev": 604,
+          "med_prev": 13000.0,
+          "pay_prev": 11984648.0,
+          "n_curr": 557,
+          "med_curr": 11835.0,
+          "pay_curr": 11076488.0,
+          "n_delta": -47,
+          "med_pct": -0.08961538461538465,
+          "pay_pct": -0.07577694397031931
+        },
+        {
+          "job_title": "Central Sterile Tech/Cert/UKHC",
+          "n_prev": 44,
+          "med_prev": 45094.0,
+          "pay_prev": 1924482.0,
+          "n_curr": 44,
+          "med_curr": 40851.0,
+          "pay_curr": 1892183.0,
+          "n_delta": 0,
+          "med_pct": -0.09409234044440506,
+          "pay_pct": -0.01678321750995848
+        }
+      ]
+    },
+    "research": {
+      "records": {
+        "prev": 2672,
+        "curr": 2619,
+        "delta": -53,
+        "pct": -0.019835329341317376
+      },
+      "median": {
+        "prev": 62001.0,
+        "curr": 63120.0,
+        "pct": 0.018048095998451696
+      },
+      "share_of_headcount": {
+        "prev": 0.10109723798713582,
+        "curr": 0.09698563175825804
+      },
+      "by_category": [
+        {
+          "research_category": "Clinical Research",
+          "n_prev": 216,
+          "med_prev": 65647.0,
+          "n_curr": 214,
+          "med_curr": 67409.5,
+          "n_delta": -2,
+          "med_pct": 0.026848142337045022
+        },
+        {
+          "research_category": "Postdoctoral",
+          "n_prev": 246,
+          "med_prev": 56484.0,
+          "n_curr": 276,
+          "med_curr": 60000.0,
+          "n_delta": 30,
+          "med_pct": 0.062247716167410205
+        },
+        {
+          "research_category": "Research Administration",
+          "n_prev": 981,
+          "med_prev": 62650.0,
+          "n_curr": 840,
+          "med_curr": 60911.5,
+          "n_delta": -141,
+          "med_pct": -0.027749401436552246
+        },
+        {
+          "research_category": "Research Faculty/Scientist",
+          "n_prev": 371,
+          "med_prev": 67504.0,
+          "n_curr": 378,
+          "med_curr": 68640.0,
+          "n_delta": 7,
+          "med_pct": 0.016828632377340558
+        },
+        {
+          "research_category": "Research Support Staff",
+          "n_prev": 858,
+          "med_prev": 61466.0,
+          "n_curr": 911,
+          "med_curr": 67569.0,
+          "n_delta": 53,
+          "med_pct": 0.09929066475775228
+        }
+      ]
+    },
+    "postdoc": {
+      "count": {
+        "prev": 246,
+        "curr": 276
+      },
+      "median": {
+        "prev": 56484.0,
+        "curr": 60000.0
+      },
+      "below_nih": {
+        "prev": 0.7136363636363636,
+        "curr": 0.5853658536585366
+      }
+    },
+    "floor": {
+      "40000": {
+        "prev": 1433,
+        "curr": 1364,
+        "prev_share": 0.07462375670468156,
+        "curr_share": 0.06955280199887819
+      },
+      "50000": {
+        "prev": 4417,
+        "curr": 4037,
+        "prev_share": 0.230016143310941,
+        "curr_share": 0.20585385752893784
+      }
+    }
+  },
+  "quality": {
+    "missing_by_year": {
+      "2024-25": {
+        "records": 26430,
+        "columns": {
+          "AdministrativeUnitOrCollege": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "Department": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "JobTitle": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "Position": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "EEO": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "Rank": {
+            "empty": 21836,
+            "share": 0.826182
+          },
+          "FullOrPartTime": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "salary": {
+            "empty": 0,
+            "share": 0.0
+          }
+        }
+      },
+      "2025-26": {
+        "records": 27004,
+        "columns": {
+          "AdministrativeUnitOrCollege": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "Department": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "JobTitle": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "Position": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "EEO": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "Rank": {
+            "empty": 22213,
+            "share": 0.822582
+          },
+          "FullOrPartTime": {
+            "empty": 0,
+            "share": 0.0
+          },
+          "salary": {
+            "empty": 0,
+            "share": 0.0
+          }
+        }
+      }
+    },
+    "rank_status_by_year": {
+      "2024-25": {
+        "Not applicable": 21814,
+        "Reported": 4594,
+        "Not reported": 22
+      },
+      "2025-26": {
+        "Not applicable": 22202,
+        "Reported": 4791,
+        "Not reported": 11
+      }
+    },
+    "incomplete_records_by_year": {
+      "2024-25": 0,
+      "2025-26": 0
+    },
+    "appointments_by_year": {
+      "2024-25": {
+        "records": 26430,
+        "distinct_name_combinations": 25859,
+        "names_on_more_than_one_record": 503
+      },
+      "2025-26": {
+        "records": 27004,
+        "distinct_name_combinations": 26429,
+        "names_on_more_than_one_record": 502
+      }
+    },
+    "note": "'empty' counts source fields published as an empty string. Academic rank is reported separately via rank_status, which distinguishes 'Not applicable' (the field cannot apply to this role) from 'Not reported' (a faculty record with no rank published)."
+  },
+  "acceptance": {
+    "year": "2024-25",
+    "checks": [
+      {
+        "check": "record_count",
+        "expected": 26430,
+        "computed": 26430,
+        "ok": true
+      },
+      {
+        "check": "mean_salary",
+        "expected": 77981,
+        "computed": 77981.31704237609,
+        "ok": true
+      },
+      {
+        "check": "median_salary",
+        "expected": 60779,
+        "computed": 60779.0,
+        "ok": true
+      },
+      {
+        "check": "count_over_500k",
+        "expected": 130,
+        "computed": 128,
+        "ok": true
+      }
+    ],
+    "all_passed": true
+  }
+}

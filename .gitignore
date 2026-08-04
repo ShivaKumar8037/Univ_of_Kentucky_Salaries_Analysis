@@ -1,0 +1,16 @@
+# Name-bearing extracts. Never publish.
+data/raw/
+
+# Superseded deliverables
+output/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

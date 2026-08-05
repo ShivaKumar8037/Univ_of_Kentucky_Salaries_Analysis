@@ -395,13 +395,22 @@ def page_distribution(pdf, df: pd.DataFrame) -> None:
     ax.hist(salaries, bins=bins, color=BLUE, edgecolor=SURFACE, linewidth=0.4)
     ax.set_xscale("log")
 
-    for value, label, colour in (
-        (d["median"], f"Median {usd(d['median'])}", INK),
-        (d["mean"], f"Mean {usd(d['mean'])}", ORANGE),
+    # Headroom, so both markers clear the tallest bar instead of sitting on it.
+    bar_max = ax.get_ylim()[1]
+    ax.set_ylim(0, bar_max * 1.16)
+
+    # Median and mean are 1.29x apart - a few millimetres on a log axis, and far
+    # narrower than either label. Anchoring each label outward from its own rule
+    # (the median's text runs left, the mean's runs right) makes them impossible
+    # to overlap: the median rule is always left of the mean rule, so the labels
+    # grow away from each other rather than into the same gap.
+    for value, label, colour, ha, nudge in (
+        (d["median"], f"Median {usd(d['median'])}", INK, "right", 1 / 1.03),
+        (d["mean"], f"Mean {usd(d['mean'])}", ORANGE, "left", 1.03),
     ):
         ax.axvline(value, color=colour, lw=1.6, linestyle="-")
-        ax.text(value * 1.04, ax.get_ylim()[1] * 0.92, label, fontsize=10,
-                color=colour, fontweight="bold")
+        ax.text(value * nudge, bar_max * 1.03, label, fontsize=10,
+                color=colour, fontweight="bold", ha=ha, va="bottom")
 
     ticks = [10_000, 25_000, 50_000, 100_000, 250_000, 500_000, 1_000_000]
     ax.set_xticks(ticks)

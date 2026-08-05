@@ -793,7 +793,7 @@ def page_rank_ladder(pdf, df: pd.DataFrame) -> None:
         f"tenure-track ranks.",
     )
 
-    ax = fig.add_axes([0.075, 0.14, 0.52, 0.60])
+    ax = fig.add_axes([0.075, 0.21, 0.52, 0.53])
     x = np.arange(len(ranks))
     palette = [BLUE, ORANGE, AQUA, YELLOW, VIOLET, "#e87ba4", "#e34948", INK_MUTED]
 
@@ -806,7 +806,7 @@ def page_rank_ladder(pdf, df: pd.DataFrame) -> None:
     for i, row in ladder.iterrows():
         colour = palette[i % len(palette)]
         ax.plot(x, [row[r] for r in ranks], marker="o", ms=7, lw=2, color=colour,
-                label=row["unit"])
+                label=row["unit"].replace("College of ", ""))
         y = row[ranks[-1]]
         while any(abs(y - p) < min_gap for p in placed):
             y -= min_gap * 0.55
@@ -818,10 +818,14 @@ def page_rank_ladder(pdf, df: pd.DataFrame) -> None:
     ax.set_xlim(-0.25, len(ranks) - 0.4)
     ax.set_ylabel("Median annual salary")
     ax.yaxis.set_major_formatter(lambda v, _: usd_compact(v))
-    ax.legend(loc="upper left", fontsize=8, ncol=2)
+    # Below the plot, not inside it: at upper left the legend sat directly on
+    # top of the lines it was labelling.
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=4,
+              fontsize=7.5, frameon=False, handlelength=1.5,
+              columnspacing=1.4, handletextpad=0.5)
     vs.strip_spines(ax); vs.no_grid_x(ax)
 
-    ax2 = fig.add_axes([0.68, 0.14, 0.26, 0.60])
+    ax2 = fig.add_axes([0.68, 0.21, 0.26, 0.53])
     y2 = np.arange(len(by_rank))
     bars = ax2.barh(y2, by_rank["median"], height=0.42, color=BLUE)
     ax2.set_yticks(y2)

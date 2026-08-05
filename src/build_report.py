@@ -17,10 +17,11 @@ import json
 from datetime import date
 from pathlib import Path
 
+import matplotlib.image as mpimg
 import numpy as np
 import pandas as pd
 from matplotlib.backends.backend_pdf import PdfPages
-from matplotlib.patches import Rectangle
+from matplotlib.patches import Ellipse, FancyBboxPatch, Rectangle
 
 import viz_style as vs
 from viz_style import (
@@ -37,6 +38,7 @@ CMP = STATS.get("comparison")              # year-over-year block, if two years 
 QUALITY = STATS.get("quality", {})
 CLEAN = ROOT / "data" / "processed" / "uk_salaries_clean.csv"
 OUT_PDF = ROOT / "docs" / "UK_Salary_Analysis.pdf"
+DASHBOARD_SHOT = ROOT / "assets" / "dashboard-preview.png"
 
 SOURCE_NOTE = (
     f"Source: University of Kentucky {LATEST} salary database (public record, "
@@ -56,7 +58,8 @@ def _next_page() -> int:
 # ---------------------------------------------------------------- cover page
 
 def page_cover(pdf, df: pd.DataFrame) -> None:
-    fig = new_page()
+    # on_dark: the masthead runs under the dashboard link in the top right.
+    fig = new_page(on_dark=True)
     o = S["overview"]
     d = S["distribution"]
 
@@ -108,6 +111,135 @@ def page_cover(pdf, df: pd.DataFrame) -> None:
              f"{vs.AUTHOR}   ·   {vs.AUTHOR_LINKEDIN}   ·   {vs.AUTHOR_GITHUB}",
              fontsize=8.5, color=vs.UK_BLUE, va="bottom", fontweight="bold")
 
+    pdf.savefig(fig)
+    plt_close(fig)
+
+
+# -------------------------------------------------- interactive companion page
+
+def page_dashboard(pdf, df: pd.DataFrame) -> None:
+    """Point the reader at the live dashboard, and show them what it looks like.
+
+    Front matter, so it carries no page number: the numbered sequence stays with
+    the fifteen analysis pages.
+
+    The screenshot is a committed asset (`assets/dashboard-preview.png`) rather
+    than something rendered at build time, so the report builds without a network
+    round trip or a headless browser.
+    """
+    fig = new_page()
+
+    page_title(
+        fig, "Interactive version",
+        "Explore this data yourself",
+        "Every figure in this report is filterable in the browser - by year, "
+        "administrative unit,\noccupational category, time status and research "
+        "workforce. It opens offline and prints.",
+    )
+
+    # ---- left column: the address, stated once and stated plainly -----------
+    # A tinted callout rather than an underlined line. The URL needs two lines
+    # at a size worth reading, and an underline under only the second one reads
+    # as two separate links.
+    fig.patches.append(
+        FancyBboxPatch((0.055, 0.545), 0.415, 0.175,
+                       boxstyle="round,pad=0.002,rounding_size=0.008",
+                       transform=fig.transFigure, facecolor=vs.UK_BLUE_TINT,
+                       edgecolor="none")
+    )
+    fig.text(0.075, 0.675, "OPEN THE DASHBOARD AT", fontsize=8,
+             color=vs.UK_BLUE_DARK, fontweight="bold", va="bottom")
+    for line, y in (("shivakumar8037.github.io/", 0.612),
+                    ("Univ_of_Kentucky_Salaries_Analysis", 0.560)):
+        fig.text(0.075, y, line, fontsize=14.5, color=vs.UK_BLUE,
+                 fontweight="bold", va="bottom", url=vs.DASHBOARD_URL)
+
+    fig.text(0.055, 0.505,
+             "Reading this on screen? Click the address above, or the link in "
+             "the top right\nof any page in this report.",
+             fontsize=9.5, color=INK_SECONDARY, va="top", linespacing=1.5)
+
+    bullets = [
+        ("Filter", "27,004 records by unit, category, time status and year."),
+        ("Compare", "2024-25 against 2025-26 on every chart."),
+        ("Read", "a six-chapter narrative with its own visualisations."),
+        ("Check", "a data-notes section stating what is missing and why."),
+    ]
+    y = 0.395
+    for lead, rest in bullets:
+        fig.patches.append(
+            Rectangle((0.055, y - 0.004), 0.006, 0.019, transform=fig.transFigure,
+                      facecolor=vs.UK_BLUE, edgecolor="none")
+        )
+        fig.text(0.075, y, lead, fontsize=9.5, color=INK, fontweight="bold",
+                 va="bottom")
+        # Fixed column, not a width estimate: matplotlib cannot measure text
+        # before a draw, and eyeballed per-word offsets do not line up.
+        fig.text(0.165, y, rest, fontsize=9.5, color=INK_SECONDARY, va="bottom")
+        y -= 0.052
+
+    fig.text(0.055, 0.115,
+             "The dashboard and this report are generated from the same "
+             "analysis file, so the\nfigures in the two cannot disagree.",
+             fontsize=8.5, color=INK_MUTED, va="bottom", linespacing=1.5)
+
+    # ---- right column: the screenshot, in a browser frame ------------------
+    img = mpimg.imread(DASHBOARD_SHOT)
+    ih, iw = img.shape[:2]
+
+    # Derive the height from the real image aspect so a re-captured screenshot
+    # of different proportions still sits square in its frame.
+    left, width = 0.520, 0.425
+    height = (width * vs.PAGE_W / (iw / ih)) / vs.PAGE_H
+    top = 0.635
+    bottom = top - height
+    bar = 0.040                                  # browser chrome bar
+
+    # Frame: one rounded rectangle behind chrome bar and screenshot together.
+    fig.patches.append(
+        FancyBboxPatch((left, bottom), width, height + bar,
+                       boxstyle="round,pad=0.004,rounding_size=0.008",
+                       transform=fig.transFigure, facecolor="#dcd9d2",
+                       edgecolor="#c9c5bd", linewidth=0.8, zorder=1)
+    )
+    fig.patches.append(
+        Rectangle((left, top), width, bar, transform=fig.transFigure,
+                  facecolor="#eceae5", edgecolor="none", zorder=2)
+    )
+
+    # Traffic lights. Figure coordinates are not square, so the height is
+    # scaled by the page ratio to keep these circular rather than oval.
+    d = 0.0062
+    for i, c in enumerate(("#e06c60", "#e6b14c", "#66b352")):
+        fig.patches.append(
+            Ellipse((left + 0.016 + i * 0.014, top + bar / 2), d,
+                    d * vs.PAGE_W / vs.PAGE_H, transform=fig.transFigure,
+                    facecolor=c, edgecolor="none", zorder=3)
+        )
+
+    # Address pill, carrying the URL a third time - this is the one a reader
+    # sees when the page is skimmed rather than read.
+    pill_l = left + 0.062
+    fig.patches.append(
+        FancyBboxPatch((pill_l, top + 0.009), width - 0.075, bar - 0.018,
+                       boxstyle="round,pad=0.001,rounding_size=0.006",
+                       transform=fig.transFigure, facecolor=SURFACE,
+                       edgecolor="#d5d1c9", linewidth=0.6, zorder=3)
+    )
+    fig.text(pill_l + 0.010, top + bar / 2,
+             vs.DASHBOARD_URL.replace("https://", ""),
+             fontsize=6.2, color=INK_SECONDARY, va="center", zorder=4,
+             url=vs.DASHBOARD_URL)
+
+    ax = fig.add_axes([left, bottom, width, height], zorder=2)
+    ax.imshow(img, interpolation="antialiased")
+    ax.set_xticks([])
+    ax.set_yticks([])
+    for s in ax.spines.values():
+        s.set_visible(False)
+    ax.set_url(vs.DASHBOARD_URL)
+
+    page_footer(fig, f"{SOURCE_NOTE} Data retrieved {RETRIEVED}.")
     pdf.savefig(fig)
     plt_close(fig)
 
@@ -893,8 +1025,10 @@ def main() -> None:
     df = all_years[all_years["year"] == LATEST].copy()
     OUT_PDF.parent.mkdir(parents=True, exist_ok=True)
 
+    pages = 0
     with PdfPages(OUT_PDF) as pdf:
         page_cover(pdf, df)
+        page_dashboard(pdf, df)
         page_yoy_overview(pdf, all_years)
         page_matched_titles(pdf, all_years)
         page_distribution(pdf, df)
@@ -911,6 +1045,10 @@ def main() -> None:
         page_top_roles(pdf, df)
         page_method(pdf, df)
 
+        # Ask the writer for the real count. Deriving it from the page-number
+        # counter drifts as soon as unnumbered front matter is added.
+        pages = pdf.get_pagecount()
+
         meta = pdf.infodict()
         meta["Title"] = f"Anatomy of a Public Payroll: University of Kentucky {LATEST} Salaries"
         meta["Author"] = vs.AUTHOR
@@ -919,7 +1057,7 @@ def main() -> None:
         meta["Keywords"] = "institutional research, data visualization, higher education"
 
     size_kb = OUT_PDF.stat().st_size / 1024
-    print(f"Wrote {OUT_PDF.relative_to(ROOT)} ({_page_no + 1} pages, {size_kb:,.0f} KB)")
+    print(f"Wrote {OUT_PDF.relative_to(ROOT)} ({pages} pages, {size_kb:,.0f} KB)")
 
 
 if __name__ == "__main__":

@@ -89,6 +89,10 @@ AUTHOR = "Shiva Kumar P"
 AUTHOR_LINKEDIN = "https://www.linkedin.com/in/shivakumar-p-/"
 AUTHOR_GITHUB = "https://github.com/ShivaKumar8037"
 
+# The interactive companion to the PDF. Every page of the report links here, so
+# a reader who arrives with only the PDF can always reach the live version.
+DASHBOARD_URL = "https://shivakumar8037.github.io/Univ_of_Kentucky_Salaries_Analysis/"
+
 
 def _available(stack: list[str]) -> list[str]:
     """Keep only fonts installed on this machine, preserving preference order.
@@ -176,9 +180,31 @@ def pct(value: float, decimals: int = 1) -> str:
 PAGE_W, PAGE_H = 11.0, 8.5  # landscape letter
 
 
-def new_page():
-    """A blank landscape-letter figure."""
+def dashboard_link(fig, on_dark: bool = False) -> None:
+    """Stamp the clickable pointer to the interactive dashboard, top right.
+
+    Called by `new_page`, so every page in the report carries it — a reader who
+    was handed only the PDF is never more than one click from the live version.
+
+    Top right is the one region no page template writes into: the kicker and
+    headline are left-aligned and the longest of them ends near x=0.46.
+
+    No arrow glyph. Avenir Next has no U+2197, and a missing glyph renders as a
+    tofu box, so the affordance is carried by weight and colour instead.
+    """
+    fig.text(0.945, 0.952, "Click here for the interactive dashboard",
+             fontsize=8, fontweight="bold", ha="right", va="bottom",
+             color="#cfdcf6" if on_dark else UK_BLUE,
+             url=DASHBOARD_URL)
+
+
+def new_page(on_dark: bool = False):
+    """A blank landscape-letter figure, carrying the dashboard link.
+
+    `on_dark` lightens that link for pages whose masthead runs under it.
+    """
     fig = plt.figure(figsize=(PAGE_W, PAGE_H))
+    dashboard_link(fig, on_dark=on_dark)
     return fig
 
 

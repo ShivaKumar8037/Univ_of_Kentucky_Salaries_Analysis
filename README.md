@@ -16,7 +16,7 @@ turns it into a report and an interactive dashboard.
 | | |
 |---|---|
 | **[Interactive dashboard](https://shivakumar8037.github.io/Univ_of_Kentucky_Salaries_Analysis/)** | Filterable explorer, six-chapter story, data notes. Self-contained, opens offline |
-| **[16-page report](https://shivakumar8037.github.io/Univ_of_Kentucky_Salaries_Analysis/UK_Salary_Analysis.pdf)** | The primary artifact |
+| **[17-page report](https://shivakumar8037.github.io/Univ_of_Kentucky_Salaries_Analysis/UK_Salary_Analysis.pdf)** | The primary artifact. Every page links back to the dashboard |
 | **[Methodology](docs/METHODOLOGY.md)** | Data flow, dictionary, missing-data handling, decision log, limitations |
 
 ## What it shows (2025-26)

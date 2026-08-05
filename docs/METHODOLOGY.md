@@ -46,7 +46,7 @@ flowchart TD
     I --> K["build_dashboard.py"]
     F --> J
     F --> K
-    J --> L["docs/UK_Salary_Analysis.pdf<br/>16 pages"]
+    J --> L["docs/UK_Salary_Analysis.pdf<br/>17 pages"]
     K --> M["docs/index.html<br/>explorer + story + data notes"]
 ```
 
@@ -207,6 +207,9 @@ content is incidental.
 | **Departmental dispersion floored at 30 full-time staff.** | Below that, one outlier dominates the p90/p10 ratio. |
 | **Log scale on distribution charts.** | Salaries span roughly five orders of magnitude. |
 | **Wildcat Blue is chrome, not a data fill.** | `#0033A0` fails the categorical lightness band outright when measured against the chart surface. Data marks use `#1b52c4`, a lighter step of the same hue that passes every gate. See §8. |
+| **Every PDF page links to the dashboard.** | The PDF travels on its own — emailed, printed, downloaded from a search result — and a reader who has only the PDF has no other route to the interactive version. The link is stamped in `new_page()` rather than per page, so a page added later cannot silently omit it. |
+| **No arrow glyph in the link label.** | Avenir Next has no `U+2197`, and matplotlib renders a missing glyph as a tofu box. The affordance is carried by weight and colour instead. |
+| **The dashboard screenshot is a committed asset.** | Capturing it at build time would make the report depend on a headless browser and a network round trip. `assets/dashboard-preview.png` is regenerated deliberately, not on every build. |
 
 ---
 
@@ -299,7 +302,7 @@ already cached; delete `data/raw/pages_<year>/` to force a clean re-extract.
 | `src/clean.py` | Typing, normalisation, derived fields, missing-data labelling, name removal |
 | `src/analysis.py` | Per-year statistics, year-over-year comparison, acceptance checks |
 | `src/viz_style.py` | UK brand palette, validated data colours, type stack, formatters |
-| `src/build_report.py` | 16-page PDF |
+| `src/build_report.py` | 17-page PDF |
 | `src/build_dashboard.py` | Self-contained interactive HTML |
 | `data/raw/pages_<year>/` | Per-page JSON cache — *not published, carries names* |
 | `data/raw/uk_salaries_<year>.csv` | Verbatim extracts — *not published, carries names* |
@@ -307,5 +310,6 @@ already cached; delete `data/raw/pages_<year>/` to force a clean re-extract.
 | `data/processed/summary_stats.json` | Every computed figure |
 | `data/processed/data_quality_report.json` | Missing-data census, cardinality, ranges |
 | `data/processed/agg_*.csv` | Unit, EEO, research, rank, dispersion, year-over-year rollups |
+| `assets/dashboard-preview.png` | Screen capture of the live dashboard, embedded in the report |
 | `docs/UK_Salary_Analysis.pdf` | The report |
 | `docs/index.html` | The dashboard |

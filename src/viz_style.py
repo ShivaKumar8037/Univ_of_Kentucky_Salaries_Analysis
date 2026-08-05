@@ -93,6 +93,10 @@ AUTHOR_GITHUB = "https://github.com/ShivaKumar8037"
 # a reader who arrives with only the PDF can always reach the live version.
 DASHBOARD_URL = "https://shivakumar8037.github.io/Univ_of_Kentucky_Salaries_Analysis/"
 
+# Source code, the analysis dataset and the full methodology.
+REPO_URL = "https://github.com/ShivaKumar8037/Univ_of_Kentucky_Salaries_Analysis"
+REPO_SHORT = "github.com/ShivaKumar8037/Univ_of_Kentucky_Salaries_Analysis"
+
 
 def _available(stack: list[str]) -> list[str]:
     """Keep only fonts installed on this machine, preserving preference order.

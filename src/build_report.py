@@ -107,7 +107,17 @@ def page_cover(pdf, df: pd.DataFrame) -> None:
              "No individual employee is named in this document.",
              fontsize=9, color=INK_MUTED, va="top", linespacing=1.6)
 
-    fig.text(0.055, 0.075,
+    fig.text(0.055, 0.128, "Source code, data and methodology:", fontsize=8.5,
+             color=INK_MUTED, va="bottom")
+    fig.text(0.255, 0.128, vs.REPO_SHORT, fontsize=8.5, color=vs.UK_BLUE,
+             va="bottom", fontweight="bold", url=vs.REPO_URL)
+    fig.text(0.055, 0.098, "Interactive dashboard:", fontsize=8.5,
+             color=INK_MUTED, va="bottom")
+    fig.text(0.255, 0.098, vs.DASHBOARD_URL.replace("https://", ""),
+             fontsize=8.5, color=vs.UK_BLUE, va="bottom", fontweight="bold",
+             url=vs.DASHBOARD_URL)
+
+    fig.text(0.055, 0.048,
              f"{vs.AUTHOR}   ·   {vs.AUTHOR_LINKEDIN}   ·   {vs.AUTHOR_GITHUB}",
              fontsize=8.5, color=vs.UK_BLUE, va="bottom", fontweight="bold")
 
@@ -165,7 +175,7 @@ def page_dashboard(pdf, df: pd.DataFrame) -> None:
         ("Read", "a six-chapter narrative with its own visualisations."),
         ("Check", "a data-notes section stating what is missing and why."),
     ]
-    y = 0.395
+    y = 0.410
     for lead, rest in bullets:
         fig.patches.append(
             Rectangle((0.055, y - 0.004), 0.006, 0.019, transform=fig.transFigure,
@@ -176,9 +186,18 @@ def page_dashboard(pdf, df: pd.DataFrame) -> None:
         # Fixed column, not a width estimate: matplotlib cannot measure text
         # before a draw, and eyeballed per-word offsets do not line up.
         fig.text(0.165, y, rest, fontsize=9.5, color=INK_SECONDARY, va="bottom")
-        y -= 0.052
+        y -= 0.048
 
-    fig.text(0.055, 0.115,
+    fig.text(0.055, 0.200, "SOURCE CODE, DATA AND METHODOLOGY", fontsize=8,
+             color=INK_MUTED, fontweight="bold", va="bottom")
+    fig.text(0.055, 0.160, vs.REPO_SHORT, fontsize=9.5, color=vs.UK_BLUE,
+             fontweight="bold", va="bottom", url=vs.REPO_URL)
+    fig.text(0.055, 0.132,
+             "The extraction, cleaning and analysis scripts, the 53,434-row "
+             "dataset and the data dictionary.",
+             fontsize=8.5, color=INK_SECONDARY, va="bottom")
+
+    fig.text(0.055, 0.072,
              "The dashboard and this report are generated from the same "
              "analysis file, so the\nfigures in the two cannot disagree.",
              fontsize=8.5, color=INK_MUTED, va="bottom", linespacing=1.5)
@@ -655,7 +674,7 @@ def page_research_overview(pdf, df: pd.DataFrame) -> None:
     vs.strip_spines(ax2); vs.no_grid_y(ax2)
 
     page_footer(fig, "Roles classified by job-title and department pattern matching; "
-                     "see DOCUMENTATION.md for the rule set.", _next_page())
+                     "see docs/METHODOLOGY.md in the repository for the rule set.", _next_page())
     pdf.savefig(fig)
     plt.close(fig)
 
@@ -1020,7 +1039,7 @@ def page_method(pdf, df: pd.DataFrame) -> None:
              f"{vs.AUTHOR}   ·   {vs.AUTHOR_LINKEDIN}   ·   {vs.AUTHOR_GITHUB}",
              fontsize=8.5, color=vs.UK_BLUE, va="bottom", fontweight="bold")
     page_footer(fig, f"{SOURCE_NOTE} Data retrieved {RETRIEVED}. "
-                     "Full methodology and data dictionary in DOCUMENTATION.md.",
+                     f"Full methodology and data dictionary: {vs.REPO_SHORT}",
                 _next_page())
     pdf.savefig(fig)
     plt.close(fig)
